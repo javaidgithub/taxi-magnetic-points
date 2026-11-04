@@ -1,0 +1,4 @@
+Cluster,SubCluster,VehLat,VehLng,Distance_km,Pickups_in_window
+17,4,59.9058,10.7475,0.5027,7
+18,4,59.9118,10.7345,0.5438,8
+19,4,59.9132,10.7567,0.824,3

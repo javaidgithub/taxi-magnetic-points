@@ -1,0 +1,5909 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bf7fb7783451704c4a7874f0859ae18d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bf7fb7783451704c4a7874f0859ae18d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bf7fb7783451704c4a7874f0859ae18d = L.map(
+                "map_bf7fb7783451704c4a7874f0859ae18d",
+                {
+                    center: [59.990411355465746, 10.726061255773672],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_187659f535662bc05a9f0eec8ffb1a0a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_187659f535662bc05a9f0eec8ffb1a0a.addTo(map_bf7fb7783451704c4a7874f0859ae18d);
+        
+    
+            var marker_cluster_0a322b49a6f4440745585028d6428961 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_4e5c75681b04c85119fb077e86ce1855 = L.marker(
+                [59.916144727646454, 10.80290723946557],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_58313ab1c8d26bbe9bd6f797e25261de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4af07d78d65d913c30ff11d4e2830a03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_863d9d5c941abb3128833fb4f6386338 = $(`<div id="html_863d9d5c941abb3128833fb4f6386338" style="width: 100.0%; height: 100.0%;">Cluster 0</div>`)[0];
+                popup_4af07d78d65d913c30ff11d4e2830a03.setContent(html_863d9d5c941abb3128833fb4f6386338);
+            
+        
+
+        marker_4e5c75681b04c85119fb077e86ce1855.bindPopup(popup_4af07d78d65d913c30ff11d4e2830a03)
+        ;
+
+        
+    
+    
+                marker_4e5c75681b04c85119fb077e86ce1855.setIcon(icon_58313ab1c8d26bbe9bd6f797e25261de);
+            
+    
+            var marker_41a1bfd01d789365d9752dfd5b0dffd5 = L.marker(
+                [59.91801836633664, 10.798921900990099],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_30b50465f153a9bac111d10a464a464e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_582d9c15f61e372350fc52c2e7b1ba76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2159402d180fdd5567b3b6843c31cfe2 = $(`<div id="html_2159402d180fdd5567b3b6843c31cfe2" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 0, Day 0)<br>Points: 101</div>`)[0];
+                popup_582d9c15f61e372350fc52c2e7b1ba76.setContent(html_2159402d180fdd5567b3b6843c31cfe2);
+            
+        
+
+        marker_41a1bfd01d789365d9752dfd5b0dffd5.bindPopup(popup_582d9c15f61e372350fc52c2e7b1ba76)
+        ;
+
+        
+    
+    
+                marker_41a1bfd01d789365d9752dfd5b0dffd5.setIcon(icon_30b50465f153a9bac111d10a464a464e);
+            
+    
+            var marker_b64a08182de30ef5a644d3e837e34617 = L.marker(
+                [59.917232213483146, 10.801117078651686],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_568cc6324d34f5510b843de6c84c9d64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9627d361bb67ecc2339e6d94ebe4e7c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05f4b92c2328104cec9372308a6b3755 = $(`<div id="html_05f4b92c2328104cec9372308a6b3755" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 0, Day 1)<br>Points: 89</div>`)[0];
+                popup_9627d361bb67ecc2339e6d94ebe4e7c3.setContent(html_05f4b92c2328104cec9372308a6b3755);
+            
+        
+
+        marker_b64a08182de30ef5a644d3e837e34617.bindPopup(popup_9627d361bb67ecc2339e6d94ebe4e7c3)
+        ;
+
+        
+    
+    
+                marker_b64a08182de30ef5a644d3e837e34617.setIcon(icon_568cc6324d34f5510b843de6c84c9d64);
+            
+    
+            var marker_6d70a6600b8c4c914eee999c2555d50c = L.marker(
+                [59.91064469607843, 10.804365460784313],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_cec91b0721879337809335e9282f241d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab67b5d0716ca2cd67424f48059a0e84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9fd769de2b1804e872f484dd755e947 = $(`<div id="html_b9fd769de2b1804e872f484dd755e947" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 0, Day 2)<br>Points: 102</div>`)[0];
+                popup_ab67b5d0716ca2cd67424f48059a0e84.setContent(html_b9fd769de2b1804e872f484dd755e947);
+            
+        
+
+        marker_6d70a6600b8c4c914eee999c2555d50c.bindPopup(popup_ab67b5d0716ca2cd67424f48059a0e84)
+        ;
+
+        
+    
+    
+                marker_6d70a6600b8c4c914eee999c2555d50c.setIcon(icon_cec91b0721879337809335e9282f241d);
+            
+    
+            var marker_ada7c3114264a8a8d65a63ed1e13a184 = L.marker(
+                [59.916998752577314, 10.80085406185567],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_f5de30a666628b4137b8efaf0a5bcba4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f83cc7102061a6e32d304c87c9400343 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ee0c75c52ad34c81f655d58d468aa12 = $(`<div id="html_1ee0c75c52ad34c81f655d58d468aa12" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 0, Day 3)<br>Points: 97</div>`)[0];
+                popup_f83cc7102061a6e32d304c87c9400343.setContent(html_1ee0c75c52ad34c81f655d58d468aa12);
+            
+        
+
+        marker_ada7c3114264a8a8d65a63ed1e13a184.bindPopup(popup_f83cc7102061a6e32d304c87c9400343)
+        ;
+
+        
+    
+    
+                marker_ada7c3114264a8a8d65a63ed1e13a184.setIcon(icon_f5de30a666628b4137b8efaf0a5bcba4);
+            
+    
+            var marker_baf128817d0208c817b818741591f5ff = L.marker(
+                [59.915875409326425, 10.80677674611399],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_f44daaf530a900842735c26655ebef7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_767b92ef124b619540334d0c7d3ea0c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebc966a634af18602ec59424be240c25 = $(`<div id="html_ebc966a634af18602ec59424be240c25" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 0, Day 4)<br>Points: 193</div>`)[0];
+                popup_767b92ef124b619540334d0c7d3ea0c1.setContent(html_ebc966a634af18602ec59424be240c25);
+            
+        
+
+        marker_baf128817d0208c817b818741591f5ff.bindPopup(popup_767b92ef124b619540334d0c7d3ea0c1)
+        ;
+
+        
+    
+    
+                marker_baf128817d0208c817b818741591f5ff.setIcon(icon_f44daaf530a900842735c26655ebef7a);
+            
+    
+            var marker_7e432355e449ff63c30e1819b5db7225 = L.marker(
+                [59.91711311734694, 10.801267974489795],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e9a175a4046da24bfd25a15f133ae610 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_832fd8b524bb7cf574a896ab263d38a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8255565333c7880c35bf0c854b86f44f = $(`<div id="html_8255565333c7880c35bf0c854b86f44f" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 0, Day 5)<br>Points: 196</div>`)[0];
+                popup_832fd8b524bb7cf574a896ab263d38a2.setContent(html_8255565333c7880c35bf0c854b86f44f);
+            
+        
+
+        marker_7e432355e449ff63c30e1819b5db7225.bindPopup(popup_832fd8b524bb7cf574a896ab263d38a2)
+        ;
+
+        
+    
+    
+                marker_7e432355e449ff63c30e1819b5db7225.setIcon(icon_e9a175a4046da24bfd25a15f133ae610);
+            
+    
+            var marker_67e5ed4a210339aad92ffc88671b969d = L.marker(
+                [59.916423256410255, 10.803864902564102],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_7a9d3a658d5b5adb4cd55f3e7b073424 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb847f6e875c954d95c07ffb218b69d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4512075b41ab91e7dd1a01d2b48e2444 = $(`<div id="html_4512075b41ab91e7dd1a01d2b48e2444" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 0, Day 6)<br>Points: 195</div>`)[0];
+                popup_cb847f6e875c954d95c07ffb218b69d4.setContent(html_4512075b41ab91e7dd1a01d2b48e2444);
+            
+        
+
+        marker_67e5ed4a210339aad92ffc88671b969d.bindPopup(popup_cb847f6e875c954d95c07ffb218b69d4)
+        ;
+
+        
+    
+    
+                marker_67e5ed4a210339aad92ffc88671b969d.setIcon(icon_7a9d3a658d5b5adb4cd55f3e7b073424);
+            
+    
+            var marker_1b838bc034e4844c739e2c876a7fad8c = L.marker(
+                [69.64526178125001, 18.96493490625],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e96cac857accafa44cb0ebf722e2684e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ebbc35ad63b4b98f6b207604bded4a93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7f7fa2afee6aa8b4b4e0a86086b06a2 = $(`<div id="html_a7f7fa2afee6aa8b4b4e0a86086b06a2" style="width: 100.0%; height: 100.0%;">Cluster 1</div>`)[0];
+                popup_ebbc35ad63b4b98f6b207604bded4a93.setContent(html_a7f7fa2afee6aa8b4b4e0a86086b06a2);
+            
+        
+
+        marker_1b838bc034e4844c739e2c876a7fad8c.bindPopup(popup_ebbc35ad63b4b98f6b207604bded4a93)
+        ;
+
+        
+    
+    
+                marker_1b838bc034e4844c739e2c876a7fad8c.setIcon(icon_e96cac857accafa44cb0ebf722e2684e);
+            
+    
+            var marker_d2f6e025e810c58f991a83809a60bbae = L.marker(
+                [69.63730666666667, 18.944827],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_144bbb9c0686e5b8eb911ed857bd640f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40e587ea695e9fa1b72e63d5df28b16b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17a42b74348280ea6642dde2f60656fc = $(`<div id="html_17a42b74348280ea6642dde2f60656fc" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 1, Day 0)<br>Points: 6</div>`)[0];
+                popup_40e587ea695e9fa1b72e63d5df28b16b.setContent(html_17a42b74348280ea6642dde2f60656fc);
+            
+        
+
+        marker_d2f6e025e810c58f991a83809a60bbae.bindPopup(popup_40e587ea695e9fa1b72e63d5df28b16b)
+        ;
+
+        
+    
+    
+                marker_d2f6e025e810c58f991a83809a60bbae.setIcon(icon_144bbb9c0686e5b8eb911ed857bd640f);
+            
+    
+            var marker_0ef18161c314ecc37e7e1a0e1417bda9 = L.marker(
+                [69.660558, 18.911966],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_a04472e7958b083b05bbed04759e9353 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7325c679eeb053d69b8a88c41f660e69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_176b5d5d7fa8fbc68408f6390b86b487 = $(`<div id="html_176b5d5d7fa8fbc68408f6390b86b487" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 1, Day 1)<br>Points: 1</div>`)[0];
+                popup_7325c679eeb053d69b8a88c41f660e69.setContent(html_176b5d5d7fa8fbc68408f6390b86b487);
+            
+        
+
+        marker_0ef18161c314ecc37e7e1a0e1417bda9.bindPopup(popup_7325c679eeb053d69b8a88c41f660e69)
+        ;
+
+        
+    
+    
+                marker_0ef18161c314ecc37e7e1a0e1417bda9.setIcon(icon_a04472e7958b083b05bbed04759e9353);
+            
+    
+            var marker_7cd6d0f517b5f96c7cd31eb96d05023c = L.marker(
+                [69.655257, 19.029163],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_d85a86a684db056030d3d8a4524819e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_afa7f47924a98072c387cfcd2a214f1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f560ac691c1240cb591964950f7471b = $(`<div id="html_9f560ac691c1240cb591964950f7471b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 1, Day 2)<br>Points: 1</div>`)[0];
+                popup_afa7f47924a98072c387cfcd2a214f1e.setContent(html_9f560ac691c1240cb591964950f7471b);
+            
+        
+
+        marker_7cd6d0f517b5f96c7cd31eb96d05023c.bindPopup(popup_afa7f47924a98072c387cfcd2a214f1e)
+        ;
+
+        
+    
+    
+                marker_7cd6d0f517b5f96c7cd31eb96d05023c.setIcon(icon_d85a86a684db056030d3d8a4524819e2);
+            
+    
+            var marker_3276290fc7d923f97b43e36a4d7d6a6f = L.marker(
+                [69.64960566666666, 18.952429],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_0cbbb22c363a9a808ab7b55512cadb8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98383c9a76830935e1bb4c5e3125304d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49f249bdfb51b1a3f72032bfd83dad5b = $(`<div id="html_49f249bdfb51b1a3f72032bfd83dad5b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 1, Day 3)<br>Points: 3</div>`)[0];
+                popup_98383c9a76830935e1bb4c5e3125304d.setContent(html_49f249bdfb51b1a3f72032bfd83dad5b);
+            
+        
+
+        marker_3276290fc7d923f97b43e36a4d7d6a6f.bindPopup(popup_98383c9a76830935e1bb4c5e3125304d)
+        ;
+
+        
+    
+    
+                marker_3276290fc7d923f97b43e36a4d7d6a6f.setIcon(icon_0cbbb22c363a9a808ab7b55512cadb8d);
+            
+    
+            var marker_af664cade50387e30d93b7fe187022ac = L.marker(
+                [69.64415544444445, 18.976914000000004],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_395c79db89b7dafd746fdf79a0854f79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa6830fcb16b6fab92284dbcff8567cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4eafe62f1c9aebfe761b3435aa6a3147 = $(`<div id="html_4eafe62f1c9aebfe761b3435aa6a3147" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 1, Day 4)<br>Points: 9</div>`)[0];
+                popup_fa6830fcb16b6fab92284dbcff8567cf.setContent(html_4eafe62f1c9aebfe761b3435aa6a3147);
+            
+        
+
+        marker_af664cade50387e30d93b7fe187022ac.bindPopup(popup_fa6830fcb16b6fab92284dbcff8567cf)
+        ;
+
+        
+    
+    
+                marker_af664cade50387e30d93b7fe187022ac.setIcon(icon_395c79db89b7dafd746fdf79a0854f79);
+            
+    
+            var marker_a76b940bebe033bc10ba50c958d6fed0 = L.marker(
+                [69.65527349999999, 18.9681885],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_9a3dd06c8419c0d1e1f943111d1b70bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8dbb2630e295233fae47ed9ae54264d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07b5d7d9524ae008f345c6ec505f446a = $(`<div id="html_07b5d7d9524ae008f345c6ec505f446a" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 1, Day 5)<br>Points: 6</div>`)[0];
+                popup_8dbb2630e295233fae47ed9ae54264d6.setContent(html_07b5d7d9524ae008f345c6ec505f446a);
+            
+        
+
+        marker_a76b940bebe033bc10ba50c958d6fed0.bindPopup(popup_8dbb2630e295233fae47ed9ae54264d6)
+        ;
+
+        
+    
+    
+                marker_a76b940bebe033bc10ba50c958d6fed0.setIcon(icon_9a3dd06c8419c0d1e1f943111d1b70bb);
+            
+    
+            var marker_5d8ab90d32e9289ae372ebb162f183b2 = L.marker(
+                [69.63847750000001, 18.968197],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_37fa616ee348183f9056a691c6560a87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_188b28eb26761737510591f74e2b8022 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68be1cc5660820ee3ef02915fe68f780 = $(`<div id="html_68be1cc5660820ee3ef02915fe68f780" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 1, Day 6)<br>Points: 6</div>`)[0];
+                popup_188b28eb26761737510591f74e2b8022.setContent(html_68be1cc5660820ee3ef02915fe68f780);
+            
+        
+
+        marker_5d8ab90d32e9289ae372ebb162f183b2.bindPopup(popup_188b28eb26761737510591f74e2b8022)
+        ;
+
+        
+    
+    
+                marker_5d8ab90d32e9289ae372ebb162f183b2.setIcon(icon_37fa616ee348183f9056a691c6560a87);
+            
+    
+            var marker_24adbd0c22d1dc553af62fd749a65938 = L.marker(
+                [58.96742570000001, 5.739341066666668],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_95ece720365208fefa8f8ae86fecb164 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97914875cce3536eb51a6bd05040a750 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_022448a7c313111d1c533d65cdbfbed8 = $(`<div id="html_022448a7c313111d1c533d65cdbfbed8" style="width: 100.0%; height: 100.0%;">Cluster 2</div>`)[0];
+                popup_97914875cce3536eb51a6bd05040a750.setContent(html_022448a7c313111d1c533d65cdbfbed8);
+            
+        
+
+        marker_24adbd0c22d1dc553af62fd749a65938.bindPopup(popup_97914875cce3536eb51a6bd05040a750)
+        ;
+
+        
+    
+    
+                marker_24adbd0c22d1dc553af62fd749a65938.setIcon(icon_95ece720365208fefa8f8ae86fecb164);
+            
+    
+            var marker_bcb3b834656f90fbf06c61dd6532b214 = L.marker(
+                [58.9803645, 5.7194234999999995],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_367e83f0fbf5fc998fd77d46b8e77efb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84c2a8e4182b19b6716f1d9ba5dc768c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_129dfed07c6b76a105a377f6aa643eaa = $(`<div id="html_129dfed07c6b76a105a377f6aa643eaa" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 2, Day 0)<br>Points: 2</div>`)[0];
+                popup_84c2a8e4182b19b6716f1d9ba5dc768c.setContent(html_129dfed07c6b76a105a377f6aa643eaa);
+            
+        
+
+        marker_bcb3b834656f90fbf06c61dd6532b214.bindPopup(popup_84c2a8e4182b19b6716f1d9ba5dc768c)
+        ;
+
+        
+    
+    
+                marker_bcb3b834656f90fbf06c61dd6532b214.setIcon(icon_367e83f0fbf5fc998fd77d46b8e77efb);
+            
+    
+            var marker_090d6c1036bc14696df8ae9c9c1eccae = L.marker(
+                [58.97426066666666, 5.735232333333333],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_ec8b4e4bf5c33907d9f962f36694ee9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34561e9a56243f3e546cbb9c3c7677f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e3d8733dcc40099856ef256c0471603 = $(`<div id="html_2e3d8733dcc40099856ef256c0471603" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 2, Day 1)<br>Points: 3</div>`)[0];
+                popup_34561e9a56243f3e546cbb9c3c7677f1.setContent(html_2e3d8733dcc40099856ef256c0471603);
+            
+        
+
+        marker_090d6c1036bc14696df8ae9c9c1eccae.bindPopup(popup_34561e9a56243f3e546cbb9c3c7677f1)
+        ;
+
+        
+    
+    
+                marker_090d6c1036bc14696df8ae9c9c1eccae.setIcon(icon_ec8b4e4bf5c33907d9f962f36694ee9b);
+            
+    
+            var marker_e3295549ec57828d61a2c52011133f46 = L.marker(
+                [58.961655, 5.792043],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e5292a496676abae8198341e89facd8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc67573df39869d4403ac2c1c0337aca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e18ae451a707653a2d9fc290ec9ef2c7 = $(`<div id="html_e18ae451a707653a2d9fc290ec9ef2c7" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 2, Day 2)<br>Points: 2</div>`)[0];
+                popup_bc67573df39869d4403ac2c1c0337aca.setContent(html_e18ae451a707653a2d9fc290ec9ef2c7);
+            
+        
+
+        marker_e3295549ec57828d61a2c52011133f46.bindPopup(popup_bc67573df39869d4403ac2c1c0337aca)
+        ;
+
+        
+    
+    
+                marker_e3295549ec57828d61a2c52011133f46.setIcon(icon_e5292a496676abae8198341e89facd8d);
+            
+    
+            var marker_e3229a50fb58eae019bc99b6430457be = L.marker(
+                [58.970778800000005, 5.7309404],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_475d8934db9b8857222bcf40fffd3c67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83607b4c24c52fae65ace983670ff57b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c2afec9c5eec3c948ce0f454c068784 = $(`<div id="html_6c2afec9c5eec3c948ce0f454c068784" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 2, Day 3)<br>Points: 5</div>`)[0];
+                popup_83607b4c24c52fae65ace983670ff57b.setContent(html_6c2afec9c5eec3c948ce0f454c068784);
+            
+        
+
+        marker_e3229a50fb58eae019bc99b6430457be.bindPopup(popup_83607b4c24c52fae65ace983670ff57b)
+        ;
+
+        
+    
+    
+                marker_e3229a50fb58eae019bc99b6430457be.setIcon(icon_475d8934db9b8857222bcf40fffd3c67);
+            
+    
+            var marker_4bc783af61367ab100362e4952e29968 = L.marker(
+                [58.96662122222223, 5.740986555555555],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_14b809deb3d2ada1a30df357d9685197 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_770a9ea0c13fdfb32cd8dc883e1145ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd73155f08d603453df9fc8346be75f0 = $(`<div id="html_fd73155f08d603453df9fc8346be75f0" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 2, Day 4)<br>Points: 9</div>`)[0];
+                popup_770a9ea0c13fdfb32cd8dc883e1145ff.setContent(html_fd73155f08d603453df9fc8346be75f0);
+            
+        
+
+        marker_4bc783af61367ab100362e4952e29968.bindPopup(popup_770a9ea0c13fdfb32cd8dc883e1145ff)
+        ;
+
+        
+    
+    
+                marker_4bc783af61367ab100362e4952e29968.setIcon(icon_14b809deb3d2ada1a30df357d9685197);
+            
+    
+            var marker_cd53b7ac9562502bc51b3f88950407e2 = L.marker(
+                [58.969183, 5.745304],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c584ffeb6814322552c0338fd4f35ac6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_405b448a750461aa8ab2fffd2004defc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dc2483deb57e2e894b562704172cc43 = $(`<div id="html_5dc2483deb57e2e894b562704172cc43" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 2, Day 5)<br>Points: 5</div>`)[0];
+                popup_405b448a750461aa8ab2fffd2004defc.setContent(html_5dc2483deb57e2e894b562704172cc43);
+            
+        
+
+        marker_cd53b7ac9562502bc51b3f88950407e2.bindPopup(popup_405b448a750461aa8ab2fffd2004defc)
+        ;
+
+        
+    
+    
+                marker_cd53b7ac9562502bc51b3f88950407e2.setIcon(icon_c584ffeb6814322552c0338fd4f35ac6);
+            
+    
+            var marker_d13e649ca6c992568fff8aa62f6b3eb1 = L.marker(
+                [58.9541375, 5.72537525],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_445c4c745ab67411723a7d78da45c211 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c52739024e5aa18deb991aa92f7740e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_737b7c043e265f04841c543dd9dfb72b = $(`<div id="html_737b7c043e265f04841c543dd9dfb72b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 2, Day 6)<br>Points: 4</div>`)[0];
+                popup_c52739024e5aa18deb991aa92f7740e9.setContent(html_737b7c043e265f04841c543dd9dfb72b);
+            
+        
+
+        marker_d13e649ca6c992568fff8aa62f6b3eb1.bindPopup(popup_c52739024e5aa18deb991aa92f7740e9)
+        ;
+
+        
+    
+    
+                marker_d13e649ca6c992568fff8aa62f6b3eb1.setIcon(icon_445c4c745ab67411723a7d78da45c211);
+            
+    
+            var marker_43c05491a790e68dd512175c8b50f774 = L.marker(
+                [63.43266305714286, 10.392405371428572],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_46551ba4670b8ab5ee3123359aef9fcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4714b3fa21073a4904351d01547d199b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00f816a1e41801e8a16836f13d7c6486 = $(`<div id="html_00f816a1e41801e8a16836f13d7c6486" style="width: 100.0%; height: 100.0%;">Cluster 3</div>`)[0];
+                popup_4714b3fa21073a4904351d01547d199b.setContent(html_00f816a1e41801e8a16836f13d7c6486);
+            
+        
+
+        marker_43c05491a790e68dd512175c8b50f774.bindPopup(popup_4714b3fa21073a4904351d01547d199b)
+        ;
+
+        
+    
+    
+                marker_43c05491a790e68dd512175c8b50f774.setIcon(icon_46551ba4670b8ab5ee3123359aef9fcc);
+            
+    
+            var marker_2b1bcb03ac24f97cc15506ba8847c0be = L.marker(
+                [63.457142, 10.308537],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_f3bc9399ce7d9d93741e9922eed50458 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_407bd8cf09fd156dbb52eb364d1ece8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d3bd6fa9ebe98d4ccb31c8d41fdb5c3 = $(`<div id="html_0d3bd6fa9ebe98d4ccb31c8d41fdb5c3" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 3, Day 0)<br>Points: 1</div>`)[0];
+                popup_407bd8cf09fd156dbb52eb364d1ece8d.setContent(html_0d3bd6fa9ebe98d4ccb31c8d41fdb5c3);
+            
+        
+
+        marker_2b1bcb03ac24f97cc15506ba8847c0be.bindPopup(popup_407bd8cf09fd156dbb52eb364d1ece8d)
+        ;
+
+        
+    
+    
+                marker_2b1bcb03ac24f97cc15506ba8847c0be.setIcon(icon_f3bc9399ce7d9d93741e9922eed50458);
+            
+    
+            var marker_3ef12055c42282440c5a6f613d7dff5d = L.marker(
+                [63.452155, 10.394625],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_2d48aa0dc026275e9e42e75e58e5d81d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4c2880ecbb8fe25bad34c5b25bbaeff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1709e78cbb1ee0d7fda8cd6f55e3480 = $(`<div id="html_c1709e78cbb1ee0d7fda8cd6f55e3480" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 3, Day 1)<br>Points: 1</div>`)[0];
+                popup_a4c2880ecbb8fe25bad34c5b25bbaeff.setContent(html_c1709e78cbb1ee0d7fda8cd6f55e3480);
+            
+        
+
+        marker_3ef12055c42282440c5a6f613d7dff5d.bindPopup(popup_a4c2880ecbb8fe25bad34c5b25bbaeff)
+        ;
+
+        
+    
+    
+                marker_3ef12055c42282440c5a6f613d7dff5d.setIcon(icon_2d48aa0dc026275e9e42e75e58e5d81d);
+            
+    
+            var marker_bd67abea0cce67299095e1cb8b710677 = L.marker(
+                [63.43403780000001, 10.3808024],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_cb06a82d7414eba2902e43fd228ad042 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea0cf7c283920568c597f3974adcead0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7201269cdd9246831398c066f3d1eb01 = $(`<div id="html_7201269cdd9246831398c066f3d1eb01" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 3, Day 2)<br>Points: 10</div>`)[0];
+                popup_ea0cf7c283920568c597f3974adcead0.setContent(html_7201269cdd9246831398c066f3d1eb01);
+            
+        
+
+        marker_bd67abea0cce67299095e1cb8b710677.bindPopup(popup_ea0cf7c283920568c597f3974adcead0)
+        ;
+
+        
+    
+    
+                marker_bd67abea0cce67299095e1cb8b710677.setIcon(icon_cb06a82d7414eba2902e43fd228ad042);
+            
+    
+            var marker_28b6b5847947fe8df52d1605bc454cc2 = L.marker(
+                [63.406577, 10.385346],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_8e94729805c1a22cec20533396c522d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec512ce8bd9a5c8b427b9cc4b87fc180 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ed1ce86d182faa0a35a5785408fb304 = $(`<div id="html_5ed1ce86d182faa0a35a5785408fb304" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 3, Day 3)<br>Points: 1</div>`)[0];
+                popup_ec512ce8bd9a5c8b427b9cc4b87fc180.setContent(html_5ed1ce86d182faa0a35a5785408fb304);
+            
+        
+
+        marker_28b6b5847947fe8df52d1605bc454cc2.bindPopup(popup_ec512ce8bd9a5c8b427b9cc4b87fc180)
+        ;
+
+        
+    
+    
+                marker_28b6b5847947fe8df52d1605bc454cc2.setIcon(icon_8e94729805c1a22cec20533396c522d5);
+            
+    
+            var marker_f388e09d2c136cba01530a513e68a58f = L.marker(
+                [63.4222478, 10.3968518],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c1387b39686607620c0404eb2e158c82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea19f234e36f64eca02364ea77769ecb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_848430700f583a630f37b795c837dd68 = $(`<div id="html_848430700f583a630f37b795c837dd68" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 3, Day 4)<br>Points: 5</div>`)[0];
+                popup_ea19f234e36f64eca02364ea77769ecb.setContent(html_848430700f583a630f37b795c837dd68);
+            
+        
+
+        marker_f388e09d2c136cba01530a513e68a58f.bindPopup(popup_ea19f234e36f64eca02364ea77769ecb)
+        ;
+
+        
+    
+    
+                marker_f388e09d2c136cba01530a513e68a58f.setIcon(icon_c1387b39686607620c0404eb2e158c82);
+            
+    
+            var marker_c818d5d28f3726682ec6a22ab670a97c = L.marker(
+                [63.42577683333334, 10.396467666666668],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_f2eade27ac20c5ccb18628308ef957f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_912dca1d5452663f2f32a24e997d0223 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29f7d1b23ad0b3294e33b5faeb72368a = $(`<div id="html_29f7d1b23ad0b3294e33b5faeb72368a" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 3, Day 5)<br>Points: 6</div>`)[0];
+                popup_912dca1d5452663f2f32a24e997d0223.setContent(html_29f7d1b23ad0b3294e33b5faeb72368a);
+            
+        
+
+        marker_c818d5d28f3726682ec6a22ab670a97c.bindPopup(popup_912dca1d5452663f2f32a24e997d0223)
+        ;
+
+        
+    
+    
+                marker_c818d5d28f3726682ec6a22ab670a97c.setIcon(icon_f2eade27ac20c5ccb18628308ef957f8);
+            
+    
+            var marker_ad6fccebeb27479607f86fc7c8c8adb9 = L.marker(
+                [63.43827772727273, 10.406780999999999],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_f88309551a5d95740847a9b727526269 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51984ac19d0ac8849c616aeec46202b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bbc58a519052b41247832eefa459b35 = $(`<div id="html_5bbc58a519052b41247832eefa459b35" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 3, Day 6)<br>Points: 11</div>`)[0];
+                popup_51984ac19d0ac8849c616aeec46202b4.setContent(html_5bbc58a519052b41247832eefa459b35);
+            
+        
+
+        marker_ad6fccebeb27479607f86fc7c8c8adb9.bindPopup(popup_51984ac19d0ac8849c616aeec46202b4)
+        ;
+
+        
+    
+    
+                marker_ad6fccebeb27479607f86fc7c8c8adb9.setIcon(icon_f88309551a5d95740847a9b727526269);
+            
+    
+            var marker_7e1ced2a69dfd4e7c000fc19df508d41 = L.marker(
+                [58.147321609756105, 8.006745658536586],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e247c05245ab381a9fb34adf0ff7b9d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_563a708e981962d4fb35fc4f40ac0f37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d3b709f826131790cade370ec95a341 = $(`<div id="html_7d3b709f826131790cade370ec95a341" style="width: 100.0%; height: 100.0%;">Cluster 4</div>`)[0];
+                popup_563a708e981962d4fb35fc4f40ac0f37.setContent(html_7d3b709f826131790cade370ec95a341);
+            
+        
+
+        marker_7e1ced2a69dfd4e7c000fc19df508d41.bindPopup(popup_563a708e981962d4fb35fc4f40ac0f37)
+        ;
+
+        
+    
+    
+                marker_7e1ced2a69dfd4e7c000fc19df508d41.setIcon(icon_e247c05245ab381a9fb34adf0ff7b9d1);
+            
+    
+            var marker_f098404a1f7424335fd031e6ec24b895 = L.marker(
+                [58.137232499999996, 7.9730545],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_b86b8ed9d958e2abd8cf3c6178f8046f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1aa1e04df7043195dbe96265ba5c46f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_764b1cbd936e8239889fbbd481e64e38 = $(`<div id="html_764b1cbd936e8239889fbbd481e64e38" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 4, Day 0)<br>Points: 2</div>`)[0];
+                popup_1aa1e04df7043195dbe96265ba5c46f0.setContent(html_764b1cbd936e8239889fbbd481e64e38);
+            
+        
+
+        marker_f098404a1f7424335fd031e6ec24b895.bindPopup(popup_1aa1e04df7043195dbe96265ba5c46f0)
+        ;
+
+        
+    
+    
+                marker_f098404a1f7424335fd031e6ec24b895.setIcon(icon_b86b8ed9d958e2abd8cf3c6178f8046f);
+            
+    
+            var marker_1a9f024b9dbb0780c5070f0ad19302e0 = L.marker(
+                [58.15644400000001, 8.00987425],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_1ce25f0e77cf6ae12ef317d586541607 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24f1cdc5a9918eaff8c39e6cad26f0b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a620943d1b9e158fe58baaee2989290 = $(`<div id="html_5a620943d1b9e158fe58baaee2989290" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 4, Day 1)<br>Points: 4</div>`)[0];
+                popup_24f1cdc5a9918eaff8c39e6cad26f0b3.setContent(html_5a620943d1b9e158fe58baaee2989290);
+            
+        
+
+        marker_1a9f024b9dbb0780c5070f0ad19302e0.bindPopup(popup_24f1cdc5a9918eaff8c39e6cad26f0b3)
+        ;
+
+        
+    
+    
+                marker_1a9f024b9dbb0780c5070f0ad19302e0.setIcon(icon_1ce25f0e77cf6ae12ef317d586541607);
+            
+    
+            var marker_70e13e6dc6517a0498a25ab00f7e9069 = L.marker(
+                [58.1399655, 8.003516000000001],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_6063ecbb20c03348a366dcf06b40e7f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5c33142f9c3c6e3908f9a54f7c03415 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce48af68dd994c00df127be2a6c0aec0 = $(`<div id="html_ce48af68dd994c00df127be2a6c0aec0" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 4, Day 2)<br>Points: 2</div>`)[0];
+                popup_e5c33142f9c3c6e3908f9a54f7c03415.setContent(html_ce48af68dd994c00df127be2a6c0aec0);
+            
+        
+
+        marker_70e13e6dc6517a0498a25ab00f7e9069.bindPopup(popup_e5c33142f9c3c6e3908f9a54f7c03415)
+        ;
+
+        
+    
+    
+                marker_70e13e6dc6517a0498a25ab00f7e9069.setIcon(icon_6063ecbb20c03348a366dcf06b40e7f5);
+            
+    
+            var marker_d413aa28dc369c2953b4fb3eeab3b27a = L.marker(
+                [58.166793500000004, 7.99964275],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_fa1d9501b195f00c90318e3a065705f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43d250550a5cbf5618df730a694b4d5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_423e0c534c8c6425565024ae16366f4d = $(`<div id="html_423e0c534c8c6425565024ae16366f4d" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 4, Day 3)<br>Points: 4</div>`)[0];
+                popup_43d250550a5cbf5618df730a694b4d5e.setContent(html_423e0c534c8c6425565024ae16366f4d);
+            
+        
+
+        marker_d413aa28dc369c2953b4fb3eeab3b27a.bindPopup(popup_43d250550a5cbf5618df730a694b4d5e)
+        ;
+
+        
+    
+    
+                marker_d413aa28dc369c2953b4fb3eeab3b27a.setIcon(icon_fa1d9501b195f00c90318e3a065705f0);
+            
+    
+            var marker_f4a21e71cf29aec847cd8a5f78765c28 = L.marker(
+                [58.142624090909095, 8.001968636363635],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_bb7dd92330ef63e79426e8ad49a4a5ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3ba3888ee52763073df570f7d65f37a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57dd743eb18d103996d069036e50ccf8 = $(`<div id="html_57dd743eb18d103996d069036e50ccf8" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 4, Day 4)<br>Points: 11</div>`)[0];
+                popup_d3ba3888ee52763073df570f7d65f37a.setContent(html_57dd743eb18d103996d069036e50ccf8);
+            
+        
+
+        marker_f4a21e71cf29aec847cd8a5f78765c28.bindPopup(popup_d3ba3888ee52763073df570f7d65f37a)
+        ;
+
+        
+    
+    
+                marker_f4a21e71cf29aec847cd8a5f78765c28.setIcon(icon_bb7dd92330ef63e79426e8ad49a4a5ec);
+            
+    
+            var marker_6b567842440896e594215bed3af37bce = L.marker(
+                [58.141122625, 8.014644375],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_2d0d0b67167d76fb739041e1e7ca47f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d68f4946bcc28a8e88d341806d37374a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a001a69efb0d81d7902fb0d0ab6f294e = $(`<div id="html_a001a69efb0d81d7902fb0d0ab6f294e" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 4, Day 5)<br>Points: 8</div>`)[0];
+                popup_d68f4946bcc28a8e88d341806d37374a.setContent(html_a001a69efb0d81d7902fb0d0ab6f294e);
+            
+        
+
+        marker_6b567842440896e594215bed3af37bce.bindPopup(popup_d68f4946bcc28a8e88d341806d37374a)
+        ;
+
+        
+    
+    
+                marker_6b567842440896e594215bed3af37bce.setIcon(icon_2d0d0b67167d76fb739041e1e7ca47f5);
+            
+    
+            var marker_19590ba22fbb5eb14967aedccb269b09 = L.marker(
+                [58.14949939999999, 8.014655299999998],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_56449a907c710a1e65b5efa2172678ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6eb02733a6148bc28f963dece4aa7e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24c0f4a286ff94a06dec7f261d45118b = $(`<div id="html_24c0f4a286ff94a06dec7f261d45118b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 4, Day 6)<br>Points: 10</div>`)[0];
+                popup_d6eb02733a6148bc28f963dece4aa7e1.setContent(html_24c0f4a286ff94a06dec7f261d45118b);
+            
+        
+
+        marker_19590ba22fbb5eb14967aedccb269b09.bindPopup(popup_d6eb02733a6148bc28f963dece4aa7e1)
+        ;
+
+        
+    
+    
+                marker_19590ba22fbb5eb14967aedccb269b09.setIcon(icon_56449a907c710a1e65b5efa2172678ef);
+            
+    
+            var marker_d740ae24c1be5ef242dbb95da8ba7f5c = L.marker(
+                [60.390386428571425, 5.318911642857143],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c91ec43f1c4cf061cc0a983f70d771c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71a620161302637f63e016b05d38ce5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c36f4bf3e99035ae2e5d9acaba7362b6 = $(`<div id="html_c36f4bf3e99035ae2e5d9acaba7362b6" style="width: 100.0%; height: 100.0%;">Cluster 5</div>`)[0];
+                popup_71a620161302637f63e016b05d38ce5c.setContent(html_c36f4bf3e99035ae2e5d9acaba7362b6);
+            
+        
+
+        marker_d740ae24c1be5ef242dbb95da8ba7f5c.bindPopup(popup_71a620161302637f63e016b05d38ce5c)
+        ;
+
+        
+    
+    
+                marker_d740ae24c1be5ef242dbb95da8ba7f5c.setIcon(icon_c91ec43f1c4cf061cc0a983f70d771c4);
+            
+    
+            var marker_bf651a23c1dd4ff1417ac672703d3ff0 = L.marker(
+                [60.380608, 5.312549],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_1ed3749c324d8d31abe351d9d82e13cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d8974f186711d06981791daab3cbc7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d38ea89f186e2a2bfd1c7cb9b3035ef7 = $(`<div id="html_d38ea89f186e2a2bfd1c7cb9b3035ef7" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 5, Day 0)<br>Points: 1</div>`)[0];
+                popup_2d8974f186711d06981791daab3cbc7c.setContent(html_d38ea89f186e2a2bfd1c7cb9b3035ef7);
+            
+        
+
+        marker_bf651a23c1dd4ff1417ac672703d3ff0.bindPopup(popup_2d8974f186711d06981791daab3cbc7c)
+        ;
+
+        
+    
+    
+                marker_bf651a23c1dd4ff1417ac672703d3ff0.setIcon(icon_1ed3749c324d8d31abe351d9d82e13cd);
+            
+    
+            var marker_72d1d429a88f3a50dbb1e514091b1bcb = L.marker(
+                [60.39484183333334, 5.306795999999999],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_7d194a826201d8346963b75e81ceca4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91591e7c9f70efe88222d125e6d35066 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbeab83c99ebf3369756158f67354e99 = $(`<div id="html_fbeab83c99ebf3369756158f67354e99" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 5, Day 1)<br>Points: 6</div>`)[0];
+                popup_91591e7c9f70efe88222d125e6d35066.setContent(html_fbeab83c99ebf3369756158f67354e99);
+            
+        
+
+        marker_72d1d429a88f3a50dbb1e514091b1bcb.bindPopup(popup_91591e7c9f70efe88222d125e6d35066)
+        ;
+
+        
+    
+    
+                marker_72d1d429a88f3a50dbb1e514091b1bcb.setIcon(icon_7d194a826201d8346963b75e81ceca4f);
+            
+    
+            var marker_4622c4c7623c7e09ec6a75a1ebf26c49 = L.marker(
+                [60.364982, 5.287799],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e6b8ccbc9e647ae82d20f69b05fc9a35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbeb9c22cd05c93daabfa8353dd72c0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5126ed3c3164837f1d27c05b8c6660a1 = $(`<div id="html_5126ed3c3164837f1d27c05b8c6660a1" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 5, Day 2)<br>Points: 1</div>`)[0];
+                popup_fbeb9c22cd05c93daabfa8353dd72c0b.setContent(html_5126ed3c3164837f1d27c05b8c6660a1);
+            
+        
+
+        marker_4622c4c7623c7e09ec6a75a1ebf26c49.bindPopup(popup_fbeb9c22cd05c93daabfa8353dd72c0b)
+        ;
+
+        
+    
+    
+                marker_4622c4c7623c7e09ec6a75a1ebf26c49.setIcon(icon_e6b8ccbc9e647ae82d20f69b05fc9a35);
+            
+    
+            var marker_5ddae3f33b609989a5703949ebcb96ff = L.marker(
+                [60.398595, 5.3658005],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_b8e0e452f60e0624ff5d6512751e0ff5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a3d1bcd245b2d26c31d2d36e14eb412 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bd9d450e983410691c8f46ee5f2bc49 = $(`<div id="html_0bd9d450e983410691c8f46ee5f2bc49" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 5, Day 3)<br>Points: 2</div>`)[0];
+                popup_4a3d1bcd245b2d26c31d2d36e14eb412.setContent(html_0bd9d450e983410691c8f46ee5f2bc49);
+            
+        
+
+        marker_5ddae3f33b609989a5703949ebcb96ff.bindPopup(popup_4a3d1bcd245b2d26c31d2d36e14eb412)
+        ;
+
+        
+    
+    
+                marker_5ddae3f33b609989a5703949ebcb96ff.setIcon(icon_b8e0e452f60e0624ff5d6512751e0ff5);
+            
+    
+            var marker_05beedcaa22ed694f77e4918bf804116 = L.marker(
+                [60.39157172727273, 5.322776454545455],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_7790723d2c9dd32f1d18db3a868d2d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93a76d4882bf04e45ada9fda63be5e1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_181f15f2ed0caf1faafc667dc96c500f = $(`<div id="html_181f15f2ed0caf1faafc667dc96c500f" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 5, Day 4)<br>Points: 11</div>`)[0];
+                popup_93a76d4882bf04e45ada9fda63be5e1b.setContent(html_181f15f2ed0caf1faafc667dc96c500f);
+            
+        
+
+        marker_05beedcaa22ed694f77e4918bf804116.bindPopup(popup_93a76d4882bf04e45ada9fda63be5e1b)
+        ;
+
+        
+    
+    
+                marker_05beedcaa22ed694f77e4918bf804116.setIcon(icon_7790723d2c9dd32f1d18db3a868d2d4d);
+            
+    
+            var marker_2e374d665fdcf92490ce7d52bddfc985 = L.marker(
+                [60.401745, 5.3374155000000005],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_a4600a5e279128f1055fefdfb2e254ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3051f275a36099f2db38bbca4e049f24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bd048a43c9ab88c558268922dadffc2 = $(`<div id="html_8bd048a43c9ab88c558268922dadffc2" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 5, Day 5)<br>Points: 2</div>`)[0];
+                popup_3051f275a36099f2db38bbca4e049f24.setContent(html_8bd048a43c9ab88c558268922dadffc2);
+            
+        
+
+        marker_2e374d665fdcf92490ce7d52bddfc985.bindPopup(popup_3051f275a36099f2db38bbca4e049f24)
+        ;
+
+        
+    
+    
+                marker_2e374d665fdcf92490ce7d52bddfc985.setIcon(icon_a4600a5e279128f1055fefdfb2e254ec);
+            
+    
+            var marker_1159dee43380caec099a42b668e9204d = L.marker(
+                [60.381642, 5.3062857999999995],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_ca62a91954389a34df74fe0f74b2eb0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a79dc53e50a7a531fb926ada32e0b80f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd3b34c131f6239d0971910c513e4e92 = $(`<div id="html_dd3b34c131f6239d0971910c513e4e92" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 5, Day 6)<br>Points: 5</div>`)[0];
+                popup_a79dc53e50a7a531fb926ada32e0b80f.setContent(html_dd3b34c131f6239d0971910c513e4e92);
+            
+        
+
+        marker_1159dee43380caec099a42b668e9204d.bindPopup(popup_a79dc53e50a7a531fb926ada32e0b80f)
+        ;
+
+        
+    
+    
+                marker_1159dee43380caec099a42b668e9204d.setIcon(icon_ca62a91954389a34df74fe0f74b2eb0b);
+            
+    
+            var marker_105a2ee3e4553996f36e567867663344 = L.marker(
+                [60.1936485974026, 11.108028305194805],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c8085ee5fb7d3e297766195cd7ed2e56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de9fd52e9b9a401edeb140ec36baaa33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce11c69487930855312e2d2f6fae2a36 = $(`<div id="html_ce11c69487930855312e2d2f6fae2a36" style="width: 100.0%; height: 100.0%;">Cluster 6</div>`)[0];
+                popup_de9fd52e9b9a401edeb140ec36baaa33.setContent(html_ce11c69487930855312e2d2f6fae2a36);
+            
+        
+
+        marker_105a2ee3e4553996f36e567867663344.bindPopup(popup_de9fd52e9b9a401edeb140ec36baaa33)
+        ;
+
+        
+    
+    
+                marker_105a2ee3e4553996f36e567867663344.setIcon(icon_c8085ee5fb7d3e297766195cd7ed2e56);
+            
+    
+            var marker_c1bcda6c6fd932c62b84233a4c2e9799 = L.marker(
+                [60.187161583333335, 11.112470291666666],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_2ea09f5f037325389fd9fadef7cc8020 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78b511b02775abe4f25003681312c6fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59864e2a7088450f98788cbfa360548c = $(`<div id="html_59864e2a7088450f98788cbfa360548c" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 6, Day 0)<br>Points: 24</div>`)[0];
+                popup_78b511b02775abe4f25003681312c6fa.setContent(html_59864e2a7088450f98788cbfa360548c);
+            
+        
+
+        marker_c1bcda6c6fd932c62b84233a4c2e9799.bindPopup(popup_78b511b02775abe4f25003681312c6fa)
+        ;
+
+        
+    
+    
+                marker_c1bcda6c6fd932c62b84233a4c2e9799.setIcon(icon_2ea09f5f037325389fd9fadef7cc8020);
+            
+    
+            var marker_89d0710a79566aacbe383226ccc13fcc = L.marker(
+                [60.198925058823534, 11.123630470588235],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_6e1b834139016e5554c0f41655c0cc81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff2ba067c2487c91edc006b399b3598c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b614fe3621a2b4b9ca5db09eeb24947 = $(`<div id="html_9b614fe3621a2b4b9ca5db09eeb24947" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 6, Day 1)<br>Points: 17</div>`)[0];
+                popup_ff2ba067c2487c91edc006b399b3598c.setContent(html_9b614fe3621a2b4b9ca5db09eeb24947);
+            
+        
+
+        marker_89d0710a79566aacbe383226ccc13fcc.bindPopup(popup_ff2ba067c2487c91edc006b399b3598c)
+        ;
+
+        
+    
+    
+                marker_89d0710a79566aacbe383226ccc13fcc.setIcon(icon_6e1b834139016e5554c0f41655c0cc81);
+            
+    
+            var marker_d3c1325f737debb6251675a0804bb3e4 = L.marker(
+                [60.20672975, 11.130586083333334],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_f3393f94cb5561348f45cf70d03cfadb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d2568347139114ba060b7c6b3f9e880 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_368bdf82309e8e3b73ee137f4dec791e = $(`<div id="html_368bdf82309e8e3b73ee137f4dec791e" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 6, Day 2)<br>Points: 12</div>`)[0];
+                popup_1d2568347139114ba060b7c6b3f9e880.setContent(html_368bdf82309e8e3b73ee137f4dec791e);
+            
+        
+
+        marker_d3c1325f737debb6251675a0804bb3e4.bindPopup(popup_1d2568347139114ba060b7c6b3f9e880)
+        ;
+
+        
+    
+    
+                marker_d3c1325f737debb6251675a0804bb3e4.setIcon(icon_f3393f94cb5561348f45cf70d03cfadb);
+            
+    
+            var marker_0b228d34fc9acd356572695171f9bfca = L.marker(
+                [60.192883900000005, 11.10130405],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e8c9b7cd85534d9cf684c3af9100062a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73805a57f808019a2c90f1fa0e6ca57a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6043244fac9ba2746d322685ec1be34a = $(`<div id="html_6043244fac9ba2746d322685ec1be34a" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 6, Day 3)<br>Points: 20</div>`)[0];
+                popup_73805a57f808019a2c90f1fa0e6ca57a.setContent(html_6043244fac9ba2746d322685ec1be34a);
+            
+        
+
+        marker_0b228d34fc9acd356572695171f9bfca.bindPopup(popup_73805a57f808019a2c90f1fa0e6ca57a)
+        ;
+
+        
+    
+    
+                marker_0b228d34fc9acd356572695171f9bfca.setIcon(icon_e8c9b7cd85534d9cf684c3af9100062a);
+            
+    
+            var marker_c6f5e5e8298a452c90631cc1226e644a = L.marker(
+                [60.188773708333336, 11.109018125],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_5a0ccfb7670cb073aa3a21342022c55b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_301f463af043b5d322ab0f09ddadfe6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8160ec376d995ad79258b8428871054 = $(`<div id="html_f8160ec376d995ad79258b8428871054" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 6, Day 4)<br>Points: 24</div>`)[0];
+                popup_301f463af043b5d322ab0f09ddadfe6f.setContent(html_f8160ec376d995ad79258b8428871054);
+            
+        
+
+        marker_c6f5e5e8298a452c90631cc1226e644a.bindPopup(popup_301f463af043b5d322ab0f09ddadfe6f)
+        ;
+
+        
+    
+    
+                marker_c6f5e5e8298a452c90631cc1226e644a.setIcon(icon_5a0ccfb7670cb073aa3a21342022c55b);
+            
+    
+            var marker_c890b86a251b11ad58619ded40de6df3 = L.marker(
+                [60.18904496153846, 11.089932576923076],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e1b1a5005864b357e48294274d559578 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d7adced878384c53d5ad14d0c966f65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c59ce78adc73cab619e1207c899ca7ec = $(`<div id="html_c59ce78adc73cab619e1207c899ca7ec" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 6, Day 5)<br>Points: 26</div>`)[0];
+                popup_9d7adced878384c53d5ad14d0c966f65.setContent(html_c59ce78adc73cab619e1207c899ca7ec);
+            
+        
+
+        marker_c890b86a251b11ad58619ded40de6df3.bindPopup(popup_9d7adced878384c53d5ad14d0c966f65)
+        ;
+
+        
+    
+    
+                marker_c890b86a251b11ad58619ded40de6df3.setIcon(icon_e1b1a5005864b357e48294274d559578);
+            
+    
+            var marker_685da58593ff53205a121c030a6713f7 = L.marker(
+                [60.19884216129033, 11.106050258064515],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_6c82817bb13ed217ff7f666a7d2f5ac6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23fc00380224bae7b304138d669c00e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64e3daf0ebc5f51bf91f201e36c19b64 = $(`<div id="html_64e3daf0ebc5f51bf91f201e36c19b64" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 6, Day 6)<br>Points: 31</div>`)[0];
+                popup_23fc00380224bae7b304138d669c00e3.setContent(html_64e3daf0ebc5f51bf91f201e36c19b64);
+            
+        
+
+        marker_685da58593ff53205a121c030a6713f7.bindPopup(popup_23fc00380224bae7b304138d669c00e3)
+        ;
+
+        
+    
+    
+                marker_685da58593ff53205a121c030a6713f7.setIcon(icon_6c82817bb13ed217ff7f666a7d2f5ac6);
+            
+    
+            var marker_f78c15152fe67851fbed33e8e4e47342 = L.marker(
+                [59.903615953020136, 10.592015281879194],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_ad2302af2402b4eead8f93b71383d661 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fada5ade3bfc9afe3bde6be0cb8f2845 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2eef7181fcd17aeb3f1162bba4d57cd0 = $(`<div id="html_2eef7181fcd17aeb3f1162bba4d57cd0" style="width: 100.0%; height: 100.0%;">Cluster 7</div>`)[0];
+                popup_fada5ade3bfc9afe3bde6be0cb8f2845.setContent(html_2eef7181fcd17aeb3f1162bba4d57cd0);
+            
+        
+
+        marker_f78c15152fe67851fbed33e8e4e47342.bindPopup(popup_fada5ade3bfc9afe3bde6be0cb8f2845)
+        ;
+
+        
+    
+    
+                marker_f78c15152fe67851fbed33e8e4e47342.setIcon(icon_ad2302af2402b4eead8f93b71383d661);
+            
+    
+            var marker_03fb5a640f62e5cf7763b84c527887bd = L.marker(
+                [59.90841957142857, 10.6001952],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_82bc0de0df103867c74a29be9e0e6d4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0eb48b5e68dd9fdfd94301e9c9113a19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51e398ee56f189f4d4f7791e6698a46b = $(`<div id="html_51e398ee56f189f4d4f7791e6698a46b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 7, Day 0)<br>Points: 35</div>`)[0];
+                popup_0eb48b5e68dd9fdfd94301e9c9113a19.setContent(html_51e398ee56f189f4d4f7791e6698a46b);
+            
+        
+
+        marker_03fb5a640f62e5cf7763b84c527887bd.bindPopup(popup_0eb48b5e68dd9fdfd94301e9c9113a19)
+        ;
+
+        
+    
+    
+                marker_03fb5a640f62e5cf7763b84c527887bd.setIcon(icon_82bc0de0df103867c74a29be9e0e6d4a);
+            
+    
+            var marker_e8d234e03ca0cfed54f6f264b7b44130 = L.marker(
+                [59.899733818181815, 10.591138333333335],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_9f5eb51d644555efee49014660e0500e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56568c0d9f20568669a022476fbaf065 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e39f09014ec38793d330259ec5b14c41 = $(`<div id="html_e39f09014ec38793d330259ec5b14c41" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 7, Day 1)<br>Points: 33</div>`)[0];
+                popup_56568c0d9f20568669a022476fbaf065.setContent(html_e39f09014ec38793d330259ec5b14c41);
+            
+        
+
+        marker_e8d234e03ca0cfed54f6f264b7b44130.bindPopup(popup_56568c0d9f20568669a022476fbaf065)
+        ;
+
+        
+    
+    
+                marker_e8d234e03ca0cfed54f6f264b7b44130.setIcon(icon_9f5eb51d644555efee49014660e0500e);
+            
+    
+            var marker_68058950c6bbd55ee7a009a0804be6e9 = L.marker(
+                [59.900381960000004, 10.583437839999998],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c0276cd3c5bd5fd02d42632755065f0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_823e97ec5a27cde3f6fa658210d8b6eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_261abf8d79225226e45ce357d12e238e = $(`<div id="html_261abf8d79225226e45ce357d12e238e" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 7, Day 2)<br>Points: 25</div>`)[0];
+                popup_823e97ec5a27cde3f6fa658210d8b6eb.setContent(html_261abf8d79225226e45ce357d12e238e);
+            
+        
+
+        marker_68058950c6bbd55ee7a009a0804be6e9.bindPopup(popup_823e97ec5a27cde3f6fa658210d8b6eb)
+        ;
+
+        
+    
+    
+                marker_68058950c6bbd55ee7a009a0804be6e9.setIcon(icon_c0276cd3c5bd5fd02d42632755065f0f);
+            
+    
+            var marker_070edab22e529b3ca6b3090d835f6d66 = L.marker(
+                [59.915879533333346, 10.602591199999999],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_62fc033fd642f6a8efd51dd3b4e286fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c92172a76ee1ca345809b036d69eefd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_468fa64017b074911fcb1c558efa689e = $(`<div id="html_468fa64017b074911fcb1c558efa689e" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 7, Day 3)<br>Points: 30</div>`)[0];
+                popup_c92172a76ee1ca345809b036d69eefd1.setContent(html_468fa64017b074911fcb1c558efa689e);
+            
+        
+
+        marker_070edab22e529b3ca6b3090d835f6d66.bindPopup(popup_c92172a76ee1ca345809b036d69eefd1)
+        ;
+
+        
+    
+    
+                marker_070edab22e529b3ca6b3090d835f6d66.setIcon(icon_62fc033fd642f6a8efd51dd3b4e286fc);
+            
+    
+            var marker_ac8d9d7b2768c6991b784bb1a796528f = L.marker(
+                [59.89757180000001, 10.595279290909088],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_d4e3be0614eff9406b1d1e93752960bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efa8a2bdec30cb56ae614638eb2fe852 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbd299050dbd32bcac5eb83e55cf3157 = $(`<div id="html_bbd299050dbd32bcac5eb83e55cf3157" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 7, Day 4)<br>Points: 55</div>`)[0];
+                popup_efa8a2bdec30cb56ae614638eb2fe852.setContent(html_bbd299050dbd32bcac5eb83e55cf3157);
+            
+        
+
+        marker_ac8d9d7b2768c6991b784bb1a796528f.bindPopup(popup_efa8a2bdec30cb56ae614638eb2fe852)
+        ;
+
+        
+    
+    
+                marker_ac8d9d7b2768c6991b784bb1a796528f.setIcon(icon_d4e3be0614eff9406b1d1e93752960bb);
+            
+    
+            var marker_36912b06b95b9db37e8bb5cf2e19103c = L.marker(
+                [59.90605784210526, 10.588324280701753],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_3997067a9cb2188dba3eb0041c3706b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e43e3932fdc6c2f8221e01f43ad9f1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf4738e2bd9e2b6411372bc46e798cb1 = $(`<div id="html_cf4738e2bd9e2b6411372bc46e798cb1" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 7, Day 5)<br>Points: 57</div>`)[0];
+                popup_8e43e3932fdc6c2f8221e01f43ad9f1e.setContent(html_cf4738e2bd9e2b6411372bc46e798cb1);
+            
+        
+
+        marker_36912b06b95b9db37e8bb5cf2e19103c.bindPopup(popup_8e43e3932fdc6c2f8221e01f43ad9f1e)
+        ;
+
+        
+    
+    
+                marker_36912b06b95b9db37e8bb5cf2e19103c.setIcon(icon_3997067a9cb2188dba3eb0041c3706b4);
+            
+    
+            var marker_ad05a83e875972dfb6bac8db5c184666 = L.marker(
+                [59.901491619047626, 10.586787777777776],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_1b928451a934c0f7dc909c68ca57a1d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb0deeb8b5d02d36b1512746895f0473 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76b588759c2cf322a7b847a086f6ad60 = $(`<div id="html_76b588759c2cf322a7b847a086f6ad60" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 7, Day 6)<br>Points: 63</div>`)[0];
+                popup_fb0deeb8b5d02d36b1512746895f0473.setContent(html_76b588759c2cf322a7b847a086f6ad60);
+            
+        
+
+        marker_ad05a83e875972dfb6bac8db5c184666.bindPopup(popup_fb0deeb8b5d02d36b1512746895f0473)
+        ;
+
+        
+    
+    
+                marker_ad05a83e875972dfb6bac8db5c184666.setIcon(icon_1b928451a934c0f7dc909c68ca57a1d9);
+            
+    
+            var marker_03abe77c799ddea1cf84101c9b71ac4e = L.marker(
+                [59.9231123219316, 10.701814641851106],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_935522e120d213e17033dab7c71b1f32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcd37e65d85ca2648ed51bb64e2f261d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59fc37355634fdbc238b6535da754c56 = $(`<div id="html_59fc37355634fdbc238b6535da754c56" style="width: 100.0%; height: 100.0%;">Cluster 8</div>`)[0];
+                popup_bcd37e65d85ca2648ed51bb64e2f261d.setContent(html_59fc37355634fdbc238b6535da754c56);
+            
+        
+
+        marker_03abe77c799ddea1cf84101c9b71ac4e.bindPopup(popup_bcd37e65d85ca2648ed51bb64e2f261d)
+        ;
+
+        
+    
+    
+                marker_03abe77c799ddea1cf84101c9b71ac4e.setIcon(icon_935522e120d213e17033dab7c71b1f32);
+            
+    
+            var marker_fb4510cd025ea630441857158e062f14 = L.marker(
+                [59.91938378431373, 10.704404156862745],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_88b11c06aeefdd7097a80be94de44788 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe78913146937abb390baa5b23dab2a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a757cff81e72abc41cd84fcb22b6951f = $(`<div id="html_a757cff81e72abc41cd84fcb22b6951f" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 8, Day 0)<br>Points: 51</div>`)[0];
+                popup_fe78913146937abb390baa5b23dab2a0.setContent(html_a757cff81e72abc41cd84fcb22b6951f);
+            
+        
+
+        marker_fb4510cd025ea630441857158e062f14.bindPopup(popup_fe78913146937abb390baa5b23dab2a0)
+        ;
+
+        
+    
+    
+                marker_fb4510cd025ea630441857158e062f14.setIcon(icon_88b11c06aeefdd7097a80be94de44788);
+            
+    
+            var marker_1a57df8b376610ae4820a9c5bcab677a = L.marker(
+                [59.925229377358484, 10.699115018867921],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_93a857e4c7c58a073d8c43aa69b6823e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e020745f6583f74ceca8c87b0ddc5148 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d33b5c19818a6bd248bdf484be5a77b = $(`<div id="html_1d33b5c19818a6bd248bdf484be5a77b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 8, Day 1)<br>Points: 53</div>`)[0];
+                popup_e020745f6583f74ceca8c87b0ddc5148.setContent(html_1d33b5c19818a6bd248bdf484be5a77b);
+            
+        
+
+        marker_1a57df8b376610ae4820a9c5bcab677a.bindPopup(popup_e020745f6583f74ceca8c87b0ddc5148)
+        ;
+
+        
+    
+    
+                marker_1a57df8b376610ae4820a9c5bcab677a.setIcon(icon_93a857e4c7c58a073d8c43aa69b6823e);
+            
+    
+            var marker_28a93f2eb17d5996cc56dba29d712d65 = L.marker(
+                [59.92519796491228, 10.702293877192984],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_db63ade3cc421d2e17e34ed87caa8cb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b31a3602249995360612bbadcfa052e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39ca3e9e8257cc4d317bda6d3166e5bb = $(`<div id="html_39ca3e9e8257cc4d317bda6d3166e5bb" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 8, Day 2)<br>Points: 57</div>`)[0];
+                popup_b31a3602249995360612bbadcfa052e9.setContent(html_39ca3e9e8257cc4d317bda6d3166e5bb);
+            
+        
+
+        marker_28a93f2eb17d5996cc56dba29d712d65.bindPopup(popup_b31a3602249995360612bbadcfa052e9)
+        ;
+
+        
+    
+    
+                marker_28a93f2eb17d5996cc56dba29d712d65.setIcon(icon_db63ade3cc421d2e17e34ed87caa8cb3);
+            
+    
+            var marker_1c8dda732c9a4414627e25cf5f1007e1 = L.marker(
+                [59.923604839999996, 10.703025440000001],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e96b9a05eae5269e805966df9bb1090e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79bc6dc3a413bd78207c83fea34588e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3474ca42a7f6c618fc0f1b900946670 = $(`<div id="html_d3474ca42a7f6c618fc0f1b900946670" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 8, Day 3)<br>Points: 50</div>`)[0];
+                popup_79bc6dc3a413bd78207c83fea34588e6.setContent(html_d3474ca42a7f6c618fc0f1b900946670);
+            
+        
+
+        marker_1c8dda732c9a4414627e25cf5f1007e1.bindPopup(popup_79bc6dc3a413bd78207c83fea34588e6)
+        ;
+
+        
+    
+    
+                marker_1c8dda732c9a4414627e25cf5f1007e1.setIcon(icon_e96b9a05eae5269e805966df9bb1090e);
+            
+    
+            var marker_ec7a8e9d74d3700375fd49ebba26e7e8 = L.marker(
+                [59.924072486956526, 10.699671582608694],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_9d0fc9a6a57aa142ac2e5697d0464d56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efc15338e90d1b858b0f3a07bc2e688b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e81d940c094890a0e06bdbfbc67af1b = $(`<div id="html_3e81d940c094890a0e06bdbfbc67af1b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 8, Day 4)<br>Points: 115</div>`)[0];
+                popup_efc15338e90d1b858b0f3a07bc2e688b.setContent(html_3e81d940c094890a0e06bdbfbc67af1b);
+            
+        
+
+        marker_ec7a8e9d74d3700375fd49ebba26e7e8.bindPopup(popup_efc15338e90d1b858b0f3a07bc2e688b)
+        ;
+
+        
+    
+    
+                marker_ec7a8e9d74d3700375fd49ebba26e7e8.setIcon(icon_9d0fc9a6a57aa142ac2e5697d0464d56);
+            
+    
+            var marker_01f2baeea6b94045113612485eb61d2b = L.marker(
+                [59.92211782291667, 10.705423093750001],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_2228a1ac8227f82c3a3d8d2ceffe0408 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c73f004f0a3c726c5d6939409076c044 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa1fb13160699573032036554bd021e6 = $(`<div id="html_aa1fb13160699573032036554bd021e6" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 8, Day 5)<br>Points: 96</div>`)[0];
+                popup_c73f004f0a3c726c5d6939409076c044.setContent(html_aa1fb13160699573032036554bd021e6);
+            
+        
+
+        marker_01f2baeea6b94045113612485eb61d2b.bindPopup(popup_c73f004f0a3c726c5d6939409076c044)
+        ;
+
+        
+    
+    
+                marker_01f2baeea6b94045113612485eb61d2b.setIcon(icon_2228a1ac8227f82c3a3d8d2ceffe0408);
+            
+    
+            var marker_f65078ba8288287eda764443f57a636a = L.marker(
+                [59.922038946666675, 10.699457293333333],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_8f71b6b6116a1b710ea7e2318727b219 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66a5b89a420e1431b249bcfb73658516 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08456ec499c78010ddef880ec6b79cac = $(`<div id="html_08456ec499c78010ddef880ec6b79cac" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 8, Day 6)<br>Points: 75</div>`)[0];
+                popup_66a5b89a420e1431b249bcfb73658516.setContent(html_08456ec499c78010ddef880ec6b79cac);
+            
+        
+
+        marker_f65078ba8288287eda764443f57a636a.bindPopup(popup_66a5b89a420e1431b249bcfb73658516)
+        ;
+
+        
+    
+    
+                marker_f65078ba8288287eda764443f57a636a.setIcon(icon_8f71b6b6116a1b710ea7e2318727b219);
+            
+    
+            var marker_ca96c2ac3a955737264ae64bfbcbd720 = L.marker(
+                [59.929707604743086, 10.761043853754941],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c6ef84ac4d5dfcb806010008d8608c4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c6f417a426dbcb94ca271a3b94840a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0be0c1e042ea4690be9dd5e4ae0c937a = $(`<div id="html_0be0c1e042ea4690be9dd5e4ae0c937a" style="width: 100.0%; height: 100.0%;">Cluster 10</div>`)[0];
+                popup_6c6f417a426dbcb94ca271a3b94840a7.setContent(html_0be0c1e042ea4690be9dd5e4ae0c937a);
+            
+        
+
+        marker_ca96c2ac3a955737264ae64bfbcbd720.bindPopup(popup_6c6f417a426dbcb94ca271a3b94840a7)
+        ;
+
+        
+    
+    
+                marker_ca96c2ac3a955737264ae64bfbcbd720.setIcon(icon_c6ef84ac4d5dfcb806010008d8608c4e);
+            
+    
+            var marker_c0dd186b6d1533193bdb442d3e525282 = L.marker(
+                [59.92927413636364, 10.759229772727274],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_4876855850f0374c150f99fbb4d63a4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8845d45b51a62ed9442e51c266b96f8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc7196ef1508a80ddaf5b525afe905d7 = $(`<div id="html_cc7196ef1508a80ddaf5b525afe905d7" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 10, Day 0)<br>Points: 22</div>`)[0];
+                popup_8845d45b51a62ed9442e51c266b96f8c.setContent(html_cc7196ef1508a80ddaf5b525afe905d7);
+            
+        
+
+        marker_c0dd186b6d1533193bdb442d3e525282.bindPopup(popup_8845d45b51a62ed9442e51c266b96f8c)
+        ;
+
+        
+    
+    
+                marker_c0dd186b6d1533193bdb442d3e525282.setIcon(icon_4876855850f0374c150f99fbb4d63a4f);
+            
+    
+            var marker_0d373aeb30b0542b0de2a175fa5ef7a6 = L.marker(
+                [59.929079131578945, 10.761828263157897],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e86646eb3a433d76f64f290109a6ce73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99123762ff36f41a229e7642a0e49ca2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3e688c13df8f02cdcfbbff3af8f1026 = $(`<div id="html_d3e688c13df8f02cdcfbbff3af8f1026" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 10, Day 1)<br>Points: 38</div>`)[0];
+                popup_99123762ff36f41a229e7642a0e49ca2.setContent(html_d3e688c13df8f02cdcfbbff3af8f1026);
+            
+        
+
+        marker_0d373aeb30b0542b0de2a175fa5ef7a6.bindPopup(popup_99123762ff36f41a229e7642a0e49ca2)
+        ;
+
+        
+    
+    
+                marker_0d373aeb30b0542b0de2a175fa5ef7a6.setIcon(icon_e86646eb3a433d76f64f290109a6ce73);
+            
+    
+            var marker_f8786c15b99579657c09edf2b1d3225f = L.marker(
+                [59.928999269230765, 10.759381115384617],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_cc33b1922bd57051e1d490643d3b441d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96f34ac2b2df6df585bb52105b45d571 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3fd119110d4be06b6ce2ec8d6951eaf = $(`<div id="html_f3fd119110d4be06b6ce2ec8d6951eaf" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 10, Day 2)<br>Points: 26</div>`)[0];
+                popup_96f34ac2b2df6df585bb52105b45d571.setContent(html_f3fd119110d4be06b6ce2ec8d6951eaf);
+            
+        
+
+        marker_f8786c15b99579657c09edf2b1d3225f.bindPopup(popup_96f34ac2b2df6df585bb52105b45d571)
+        ;
+
+        
+    
+    
+                marker_f8786c15b99579657c09edf2b1d3225f.setIcon(icon_cc33b1922bd57051e1d490643d3b441d);
+            
+    
+            var marker_123cb6d97234895a570c50e1e001d42e = L.marker(
+                [59.92823121052631, 10.762128789473685],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_833cbeb34ad67c7d30c4ba03d2cb0c62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93d4627e4ec04d2e783b9851db9a65b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9983f040639d121fb3f231918fd8cac = $(`<div id="html_d9983f040639d121fb3f231918fd8cac" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 10, Day 3)<br>Points: 19</div>`)[0];
+                popup_93d4627e4ec04d2e783b9851db9a65b0.setContent(html_d9983f040639d121fb3f231918fd8cac);
+            
+        
+
+        marker_123cb6d97234895a570c50e1e001d42e.bindPopup(popup_93d4627e4ec04d2e783b9851db9a65b0)
+        ;
+
+        
+    
+    
+                marker_123cb6d97234895a570c50e1e001d42e.setIcon(icon_833cbeb34ad67c7d30c4ba03d2cb0c62);
+            
+    
+            var marker_03882899a833492bad8612682f26780f = L.marker(
+                [59.93062864444443, 10.760084555555554],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_a9c6b2eead0602396bb9bb3a0707695f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a580a71e5de78b6b18efd6a81ee6a98b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11087f42c0df76aa75f92c44db63da7b = $(`<div id="html_11087f42c0df76aa75f92c44db63da7b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 10, Day 4)<br>Points: 45</div>`)[0];
+                popup_a580a71e5de78b6b18efd6a81ee6a98b.setContent(html_11087f42c0df76aa75f92c44db63da7b);
+            
+        
+
+        marker_03882899a833492bad8612682f26780f.bindPopup(popup_a580a71e5de78b6b18efd6a81ee6a98b)
+        ;
+
+        
+    
+    
+                marker_03882899a833492bad8612682f26780f.setIcon(icon_a9c6b2eead0602396bb9bb3a0707695f);
+            
+    
+            var marker_d74c2b6ae7e882dbd1ceb484b2128cdc = L.marker(
+                [59.93087130232559, 10.761173604651162],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_d3ed4f0b0d4f37cd12043c15b5a5f293 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4bcec6e44e17e49394353e44ca1bc7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d007089cce225b9e52b13d39ceb0e05 = $(`<div id="html_3d007089cce225b9e52b13d39ceb0e05" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 10, Day 5)<br>Points: 43</div>`)[0];
+                popup_a4bcec6e44e17e49394353e44ca1bc7b.setContent(html_3d007089cce225b9e52b13d39ceb0e05);
+            
+        
+
+        marker_d74c2b6ae7e882dbd1ceb484b2128cdc.bindPopup(popup_a4bcec6e44e17e49394353e44ca1bc7b)
+        ;
+
+        
+    
+    
+                marker_d74c2b6ae7e882dbd1ceb484b2128cdc.setIcon(icon_d3ed4f0b0d4f37cd12043c15b5a5f293);
+            
+    
+            var marker_49c6e6c61c81e22653415b4c4e3ccbdf = L.marker(
+                [59.92951428333333, 10.762215666666666],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_3a647f827b12d96d4ff7fb8c793012df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca2a4d4de7811722bc7180483e781e2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e59b4103c41a699a3f1e9f1226ad27a3 = $(`<div id="html_e59b4103c41a699a3f1e9f1226ad27a3" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 10, Day 6)<br>Points: 60</div>`)[0];
+                popup_ca2a4d4de7811722bc7180483e781e2e.setContent(html_e59b4103c41a699a3f1e9f1226ad27a3);
+            
+        
+
+        marker_49c6e6c61c81e22653415b4c4e3ccbdf.bindPopup(popup_ca2a4d4de7811722bc7180483e781e2e)
+        ;
+
+        
+    
+    
+                marker_49c6e6c61c81e22653415b4c4e3ccbdf.setIcon(icon_3a647f827b12d96d4ff7fb8c793012df);
+            
+    
+            var marker_302bf729aca6d021806c2a641ad85be7 = L.marker(
+                [59.902108569965876, 10.764931201365188],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e75493237aab238ea8e1337ec9880c1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8feb3f7b3ea3a71d2f86b0ce33c0b2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17f567733966d25c1c5f833aab189430 = $(`<div id="html_17f567733966d25c1c5f833aab189430" style="width: 100.0%; height: 100.0%;">Cluster 11</div>`)[0];
+                popup_f8feb3f7b3ea3a71d2f86b0ce33c0b2f.setContent(html_17f567733966d25c1c5f833aab189430);
+            
+        
+
+        marker_302bf729aca6d021806c2a641ad85be7.bindPopup(popup_f8feb3f7b3ea3a71d2f86b0ce33c0b2f)
+        ;
+
+        
+    
+    
+                marker_302bf729aca6d021806c2a641ad85be7.setIcon(icon_e75493237aab238ea8e1337ec9880c1c);
+            
+    
+            var marker_1c84dcf68b0f06bbac07938eb614a76a = L.marker(
+                [59.90306192307693, 10.765855333333333],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_678e42a945c12e30aae0c4678f2ea9a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc9c58005f1410df84740f3cdff008b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a844b721033e1778b5f41815805504b = $(`<div id="html_0a844b721033e1778b5f41815805504b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 11, Day 0)<br>Points: 39</div>`)[0];
+                popup_fc9c58005f1410df84740f3cdff008b2.setContent(html_0a844b721033e1778b5f41815805504b);
+            
+        
+
+        marker_1c84dcf68b0f06bbac07938eb614a76a.bindPopup(popup_fc9c58005f1410df84740f3cdff008b2)
+        ;
+
+        
+    
+    
+                marker_1c84dcf68b0f06bbac07938eb614a76a.setIcon(icon_678e42a945c12e30aae0c4678f2ea9a8);
+            
+    
+            var marker_c4f5baad66440fd8dc6a2ed2652ea650 = L.marker(
+                [59.903018116279064, 10.764882581395348],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_702c17fcd3963b9c2351981a902d9a76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca37956f63e94e3a042c7e31fc7064aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc1951afb59b901780c9f0d2b405e379 = $(`<div id="html_bc1951afb59b901780c9f0d2b405e379" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 11, Day 1)<br>Points: 43</div>`)[0];
+                popup_ca37956f63e94e3a042c7e31fc7064aa.setContent(html_bc1951afb59b901780c9f0d2b405e379);
+            
+        
+
+        marker_c4f5baad66440fd8dc6a2ed2652ea650.bindPopup(popup_ca37956f63e94e3a042c7e31fc7064aa)
+        ;
+
+        
+    
+    
+                marker_c4f5baad66440fd8dc6a2ed2652ea650.setIcon(icon_702c17fcd3963b9c2351981a902d9a76);
+            
+    
+            var marker_ff7ea5314c12e8cbcd0151261506e95d = L.marker(
+                [59.90032296551725, 10.764204586206896],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_1ae3ec8c1f3805284581aa1d69ce5f7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2bf82be75b55bc8955dcac8bb0c96b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f90f45843d215cd7022d85a4b5f54bb1 = $(`<div id="html_f90f45843d215cd7022d85a4b5f54bb1" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 11, Day 2)<br>Points: 29</div>`)[0];
+                popup_a2bf82be75b55bc8955dcac8bb0c96b1.setContent(html_f90f45843d215cd7022d85a4b5f54bb1);
+            
+        
+
+        marker_ff7ea5314c12e8cbcd0151261506e95d.bindPopup(popup_a2bf82be75b55bc8955dcac8bb0c96b1)
+        ;
+
+        
+    
+    
+                marker_ff7ea5314c12e8cbcd0151261506e95d.setIcon(icon_1ae3ec8c1f3805284581aa1d69ce5f7c);
+            
+    
+            var marker_964535307f1c40c5d93ed105a822a77c = L.marker(
+                [59.90080977777778, 10.76476340740741],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_935d53eb42e01548b60bddf2075c0118 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fce9938b3bb09858cf90f0eb26ac4065 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70eeca063077ec8f2d3f5d940cd4ed59 = $(`<div id="html_70eeca063077ec8f2d3f5d940cd4ed59" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 11, Day 3)<br>Points: 27</div>`)[0];
+                popup_fce9938b3bb09858cf90f0eb26ac4065.setContent(html_70eeca063077ec8f2d3f5d940cd4ed59);
+            
+        
+
+        marker_964535307f1c40c5d93ed105a822a77c.bindPopup(popup_fce9938b3bb09858cf90f0eb26ac4065)
+        ;
+
+        
+    
+    
+                marker_964535307f1c40c5d93ed105a822a77c.setIcon(icon_935d53eb42e01548b60bddf2075c0118);
+            
+    
+            var marker_ba6a22ec13d206558594ddb542f150bc = L.marker(
+                [59.902922624999995, 10.765227437500002],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_0ed80005ccc260b96dcca49540d66786 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ca4de39b8b8f2a477904c5e25c443ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a86e50e3b8544a0b72bd1accc4615b61 = $(`<div id="html_a86e50e3b8544a0b72bd1accc4615b61" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 11, Day 4)<br>Points: 48</div>`)[0];
+                popup_2ca4de39b8b8f2a477904c5e25c443ea.setContent(html_a86e50e3b8544a0b72bd1accc4615b61);
+            
+        
+
+        marker_ba6a22ec13d206558594ddb542f150bc.bindPopup(popup_2ca4de39b8b8f2a477904c5e25c443ea)
+        ;
+
+        
+    
+    
+                marker_ba6a22ec13d206558594ddb542f150bc.setIcon(icon_0ed80005ccc260b96dcca49540d66786);
+            
+    
+            var marker_2bc0011720ab866d83b1e8095df0ca85 = L.marker(
+                [59.90211401694914, 10.763962627118644],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_3cbfa0eb8ac758616851ea7688954ad4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e2216d455edcbcd53512bac26769a35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a3f405e1a643eb0177c4de3f6e12815 = $(`<div id="html_9a3f405e1a643eb0177c4de3f6e12815" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 11, Day 5)<br>Points: 59</div>`)[0];
+                popup_4e2216d455edcbcd53512bac26769a35.setContent(html_9a3f405e1a643eb0177c4de3f6e12815);
+            
+        
+
+        marker_2bc0011720ab866d83b1e8095df0ca85.bindPopup(popup_4e2216d455edcbcd53512bac26769a35)
+        ;
+
+        
+    
+    
+                marker_2bc0011720ab866d83b1e8095df0ca85.setIcon(icon_3cbfa0eb8ac758616851ea7688954ad4);
+            
+    
+            var marker_6049a5d335c05cab5679dc20b943aa44 = L.marker(
+                [59.90150779166667, 10.765651583333332],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e02c10729b0231342ef368e8415581fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b397e245c23cededd4255330377352e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f2a98680aba33e3fd2635f2101b4c5a = $(`<div id="html_6f2a98680aba33e3fd2635f2101b4c5a" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 11, Day 6)<br>Points: 48</div>`)[0];
+                popup_b397e245c23cededd4255330377352e1.setContent(html_6f2a98680aba33e3fd2635f2101b4c5a);
+            
+        
+
+        marker_6049a5d335c05cab5679dc20b943aa44.bindPopup(popup_b397e245c23cededd4255330377352e1)
+        ;
+
+        
+    
+    
+                marker_6049a5d335c05cab5679dc20b943aa44.setIcon(icon_e02c10729b0231342ef368e8415581fa);
+            
+    
+            var marker_4dd2cf45727543f23b0a59ab1162d526 = L.marker(
+                [59.91861420208333, 10.747266064583334],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_5c4f644c1620c71571aa93d04d8120d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acf274ae6285166dbd609dfe63e07e48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73560cc899b02ef84c5514c791d2ccca = $(`<div id="html_73560cc899b02ef84c5514c791d2ccca" style="width: 100.0%; height: 100.0%;">Cluster 12</div>`)[0];
+                popup_acf274ae6285166dbd609dfe63e07e48.setContent(html_73560cc899b02ef84c5514c791d2ccca);
+            
+        
+
+        marker_4dd2cf45727543f23b0a59ab1162d526.bindPopup(popup_acf274ae6285166dbd609dfe63e07e48)
+        ;
+
+        
+    
+    
+                marker_4dd2cf45727543f23b0a59ab1162d526.setIcon(icon_5c4f644c1620c71571aa93d04d8120d0);
+            
+    
+            var marker_79dc468928148e238f956fee991906fb = L.marker(
+                [59.9189326037736, 10.747186584905661],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_bd9bebc4316bf786057535bc9ac4e858 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8aa57d29a037b32c47c9aaae73784c05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b6d1ce42b8599cf50982c10183ef998 = $(`<div id="html_5b6d1ce42b8599cf50982c10183ef998" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 12, Day 0)<br>Points: 53</div>`)[0];
+                popup_8aa57d29a037b32c47c9aaae73784c05.setContent(html_5b6d1ce42b8599cf50982c10183ef998);
+            
+        
+
+        marker_79dc468928148e238f956fee991906fb.bindPopup(popup_8aa57d29a037b32c47c9aaae73784c05)
+        ;
+
+        
+    
+    
+                marker_79dc468928148e238f956fee991906fb.setIcon(icon_bd9bebc4316bf786057535bc9ac4e858);
+            
+    
+            var marker_7e415b60ede7209cb87cda01b776942d = L.marker(
+                [59.91896308064517, 10.747841983870968],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_cfeb1d1a8f191ad949e9ac23510520b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2290b387ae9ee9b7059b406768f416b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5c1b1f67dedf19ffb3d381d33ebe0d7 = $(`<div id="html_a5c1b1f67dedf19ffb3d381d33ebe0d7" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 12, Day 1)<br>Points: 62</div>`)[0];
+                popup_2290b387ae9ee9b7059b406768f416b9.setContent(html_a5c1b1f67dedf19ffb3d381d33ebe0d7);
+            
+        
+
+        marker_7e415b60ede7209cb87cda01b776942d.bindPopup(popup_2290b387ae9ee9b7059b406768f416b9)
+        ;
+
+        
+    
+    
+                marker_7e415b60ede7209cb87cda01b776942d.setIcon(icon_cfeb1d1a8f191ad949e9ac23510520b2);
+            
+    
+            var marker_629c5e03b30b080930d3ec5b8640d5c9 = L.marker(
+                [59.91870399999999, 10.747865795918367],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_2a106b1789097390841fbb841a6658f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8dc0128aec152fcec776d116ec1b57d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b9da60471b6635dfc0c3e291bc4cd9a = $(`<div id="html_9b9da60471b6635dfc0c3e291bc4cd9a" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 12, Day 2)<br>Points: 49</div>`)[0];
+                popup_8dc0128aec152fcec776d116ec1b57d4.setContent(html_9b9da60471b6635dfc0c3e291bc4cd9a);
+            
+        
+
+        marker_629c5e03b30b080930d3ec5b8640d5c9.bindPopup(popup_8dc0128aec152fcec776d116ec1b57d4)
+        ;
+
+        
+    
+    
+                marker_629c5e03b30b080930d3ec5b8640d5c9.setIcon(icon_2a106b1789097390841fbb841a6658f4);
+            
+    
+            var marker_8bbf81db4a2c290d953167913e54a956 = L.marker(
+                [59.91863633333333, 10.747342875000001],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e145f9228cb2cde62e1b3cc817d60dbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e6251af95d11238d95af438e1ba334e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c36c9b8baeb60c7a54c6d0a3b3b00e1 = $(`<div id="html_4c36c9b8baeb60c7a54c6d0a3b3b00e1" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 12, Day 3)<br>Points: 48</div>`)[0];
+                popup_5e6251af95d11238d95af438e1ba334e.setContent(html_4c36c9b8baeb60c7a54c6d0a3b3b00e1);
+            
+        
+
+        marker_8bbf81db4a2c290d953167913e54a956.bindPopup(popup_5e6251af95d11238d95af438e1ba334e)
+        ;
+
+        
+    
+    
+                marker_8bbf81db4a2c290d953167913e54a956.setIcon(icon_e145f9228cb2cde62e1b3cc817d60dbc);
+            
+    
+            var marker_2e9c5738e0af88d859b09ccf72107c10 = L.marker(
+                [59.91848811818182, 10.7472565],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_4b1cc219a4800720136dcf492678d90c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d73407daf7eccf20009aa48d3f37699 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3069f556e209e63858eebb32795d3b2 = $(`<div id="html_c3069f556e209e63858eebb32795d3b2" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 12, Day 4)<br>Points: 110</div>`)[0];
+                popup_2d73407daf7eccf20009aa48d3f37699.setContent(html_c3069f556e209e63858eebb32795d3b2);
+            
+        
+
+        marker_2e9c5738e0af88d859b09ccf72107c10.bindPopup(popup_2d73407daf7eccf20009aa48d3f37699)
+        ;
+
+        
+    
+    
+                marker_2e9c5738e0af88d859b09ccf72107c10.setIcon(icon_4b1cc219a4800720136dcf492678d90c);
+            
+    
+            var marker_79153ea80595af19be9b0307b4657dea = L.marker(
+                [59.918641858974354, 10.747533923076922],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_8288df4947b47bb5af2457da49055665 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a0f9a04ccd58d26681e5d07b52aff41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca7af5e187d74c0ad1129b5950ceb2b6 = $(`<div id="html_ca7af5e187d74c0ad1129b5950ceb2b6" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 12, Day 5)<br>Points: 78</div>`)[0];
+                popup_4a0f9a04ccd58d26681e5d07b52aff41.setContent(html_ca7af5e187d74c0ad1129b5950ceb2b6);
+            
+        
+
+        marker_79153ea80595af19be9b0307b4657dea.bindPopup(popup_4a0f9a04ccd58d26681e5d07b52aff41)
+        ;
+
+        
+    
+    
+                marker_79153ea80595af19be9b0307b4657dea.setIcon(icon_8288df4947b47bb5af2457da49055665);
+            
+    
+            var marker_14ace7d9a3f8515a610736a5a1717e50 = L.marker(
+                [59.918211, 10.74621095],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e71deb17fc8e3298a8121719a6a53fac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f07008b4ed512c92dc1a8b020182ab59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9d27f5810caa440c7cdaf6b05a2aa63 = $(`<div id="html_b9d27f5810caa440c7cdaf6b05a2aa63" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 12, Day 6)<br>Points: 80</div>`)[0];
+                popup_f07008b4ed512c92dc1a8b020182ab59.setContent(html_b9d27f5810caa440c7cdaf6b05a2aa63);
+            
+        
+
+        marker_14ace7d9a3f8515a610736a5a1717e50.bindPopup(popup_f07008b4ed512c92dc1a8b020182ab59)
+        ;
+
+        
+    
+    
+                marker_14ace7d9a3f8515a610736a5a1717e50.setIcon(icon_e71deb17fc8e3298a8121719a6a53fac);
+            
+    
+            var marker_430fdfd6c4ce00c9e7efe6ff046ba5e8 = L.marker(
+                [59.849147738095226, 10.749912928571428],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_468469e8cd8cd1871b7d8c2076fdb508 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b24f9133dd539572b71dc5dac707dfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_791c4b4435f557a250ae0a9b68f5b3fe = $(`<div id="html_791c4b4435f557a250ae0a9b68f5b3fe" style="width: 100.0%; height: 100.0%;">Cluster 13</div>`)[0];
+                popup_3b24f9133dd539572b71dc5dac707dfd.setContent(html_791c4b4435f557a250ae0a9b68f5b3fe);
+            
+        
+
+        marker_430fdfd6c4ce00c9e7efe6ff046ba5e8.bindPopup(popup_3b24f9133dd539572b71dc5dac707dfd)
+        ;
+
+        
+    
+    
+                marker_430fdfd6c4ce00c9e7efe6ff046ba5e8.setIcon(icon_468469e8cd8cd1871b7d8c2076fdb508);
+            
+    
+            var marker_e04dac62e429b59c979993e3f4b6491b = L.marker(
+                [59.85527475000001, 10.75294475],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_0c6ada4d5ad7cf5dc2921156b1e307b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db3782b43e3345613429617360ccee94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b157d6b1f1bbc2724cf3dc1495b4e246 = $(`<div id="html_b157d6b1f1bbc2724cf3dc1495b4e246" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 13, Day 0)<br>Points: 4</div>`)[0];
+                popup_db3782b43e3345613429617360ccee94.setContent(html_b157d6b1f1bbc2724cf3dc1495b4e246);
+            
+        
+
+        marker_e04dac62e429b59c979993e3f4b6491b.bindPopup(popup_db3782b43e3345613429617360ccee94)
+        ;
+
+        
+    
+    
+                marker_e04dac62e429b59c979993e3f4b6491b.setIcon(icon_0c6ada4d5ad7cf5dc2921156b1e307b6);
+            
+    
+            var marker_15cdc78b9a1fad44da9924f3ec7a7cf7 = L.marker(
+                [59.84513539999999, 10.745799600000002],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_af7e8807f506f336620f0e4544961b47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84bbecd93c4088e5a794b12467413928 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19ae50e6da4597619521e6a33cf097f6 = $(`<div id="html_19ae50e6da4597619521e6a33cf097f6" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 13, Day 1)<br>Points: 5</div>`)[0];
+                popup_84bbecd93c4088e5a794b12467413928.setContent(html_19ae50e6da4597619521e6a33cf097f6);
+            
+        
+
+        marker_15cdc78b9a1fad44da9924f3ec7a7cf7.bindPopup(popup_84bbecd93c4088e5a794b12467413928)
+        ;
+
+        
+    
+    
+                marker_15cdc78b9a1fad44da9924f3ec7a7cf7.setIcon(icon_af7e8807f506f336620f0e4544961b47);
+            
+    
+            var marker_376997f0ca85766eba552b2f776f3f65 = L.marker(
+                [59.8402275, 10.7454125],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_30fd97fe3dcb0fa76ea70427cc29b5dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fe58a56a06468db58cf3c6d1e1ac922 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d88e319139a59240456603ce81935f6b = $(`<div id="html_d88e319139a59240456603ce81935f6b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 13, Day 2)<br>Points: 2</div>`)[0];
+                popup_3fe58a56a06468db58cf3c6d1e1ac922.setContent(html_d88e319139a59240456603ce81935f6b);
+            
+        
+
+        marker_376997f0ca85766eba552b2f776f3f65.bindPopup(popup_3fe58a56a06468db58cf3c6d1e1ac922)
+        ;
+
+        
+    
+    
+                marker_376997f0ca85766eba552b2f776f3f65.setIcon(icon_30fd97fe3dcb0fa76ea70427cc29b5dd);
+            
+    
+            var marker_957ff65b48e73997e7cd310d5b05b50e = L.marker(
+                [59.852642375, 10.745135000000001],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_de0ca0f4fb7a866a6f40def206b5432a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c954f3c020e38c103f6a5ecbfbe98c32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ed80fe4f1fc391ad9692c3512f5511e = $(`<div id="html_3ed80fe4f1fc391ad9692c3512f5511e" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 13, Day 3)<br>Points: 8</div>`)[0];
+                popup_c954f3c020e38c103f6a5ecbfbe98c32.setContent(html_3ed80fe4f1fc391ad9692c3512f5511e);
+            
+        
+
+        marker_957ff65b48e73997e7cd310d5b05b50e.bindPopup(popup_c954f3c020e38c103f6a5ecbfbe98c32)
+        ;
+
+        
+    
+    
+                marker_957ff65b48e73997e7cd310d5b05b50e.setIcon(icon_de0ca0f4fb7a866a6f40def206b5432a);
+            
+    
+            var marker_8a5381470693b6925993402f5401c972 = L.marker(
+                [59.85802671428571, 10.747856571428573],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_d4b0849ed17ad4b832c0d12eafbbcd9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c13ec9ba45e6cb656e5fef27d84f3c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49afb5ea678c936c996693192a0712e4 = $(`<div id="html_49afb5ea678c936c996693192a0712e4" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 13, Day 4)<br>Points: 7</div>`)[0];
+                popup_5c13ec9ba45e6cb656e5fef27d84f3c7.setContent(html_49afb5ea678c936c996693192a0712e4);
+            
+        
+
+        marker_8a5381470693b6925993402f5401c972.bindPopup(popup_5c13ec9ba45e6cb656e5fef27d84f3c7)
+        ;
+
+        
+    
+    
+                marker_8a5381470693b6925993402f5401c972.setIcon(icon_d4b0849ed17ad4b832c0d12eafbbcd9d);
+            
+    
+            var marker_eba040aa6ae337520a3015c0746ba0cb = L.marker(
+                [59.8286215, 10.753916166666668],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e9a9067c90ebf72a16d78a11bd0b8f18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0eb3ea38bf178c8d0da0085baaddd8b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b944fd73addffcf9067c13deb7ac9c1 = $(`<div id="html_2b944fd73addffcf9067c13deb7ac9c1" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 13, Day 5)<br>Points: 6</div>`)[0];
+                popup_0eb3ea38bf178c8d0da0085baaddd8b8.setContent(html_2b944fd73addffcf9067c13deb7ac9c1);
+            
+        
+
+        marker_eba040aa6ae337520a3015c0746ba0cb.bindPopup(popup_0eb3ea38bf178c8d0da0085baaddd8b8)
+        ;
+
+        
+    
+    
+                marker_eba040aa6ae337520a3015c0746ba0cb.setIcon(icon_e9a9067c90ebf72a16d78a11bd0b8f18);
+            
+    
+            var marker_1e8554e48975cb147115504bdc406d6f = L.marker(
+                [59.8537919, 10.754516800000001],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_23f865e133801e7fbfa85d1e574c7b80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc53a45b777346ee0eac13f15eaa0237 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71fa7a986c9a9f5499c9a6b59778fec6 = $(`<div id="html_71fa7a986c9a9f5499c9a6b59778fec6" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 13, Day 6)<br>Points: 10</div>`)[0];
+                popup_dc53a45b777346ee0eac13f15eaa0237.setContent(html_71fa7a986c9a9f5499c9a6b59778fec6);
+            
+        
+
+        marker_1e8554e48975cb147115504bdc406d6f.bindPopup(popup_dc53a45b777346ee0eac13f15eaa0237)
+        ;
+
+        
+    
+    
+                marker_1e8554e48975cb147115504bdc406d6f.setIcon(icon_23f865e133801e7fbfa85d1e574c7b80);
+            
+    
+            var marker_b1e2b5a71b5062110d03ca083800608b = L.marker(
+                [59.91508764444445, 10.7665841],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_eac7230c39b80d57166cd9f179b1bd19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3cb2fab9031353488b84bedca03fd0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbe0404870489000907d1b270eccb66c = $(`<div id="html_dbe0404870489000907d1b270eccb66c" style="width: 100.0%; height: 100.0%;">Cluster 14</div>`)[0];
+                popup_f3cb2fab9031353488b84bedca03fd0b.setContent(html_dbe0404870489000907d1b270eccb66c);
+            
+        
+
+        marker_b1e2b5a71b5062110d03ca083800608b.bindPopup(popup_f3cb2fab9031353488b84bedca03fd0b)
+        ;
+
+        
+    
+    
+                marker_b1e2b5a71b5062110d03ca083800608b.setIcon(icon_eac7230c39b80d57166cd9f179b1bd19);
+            
+    
+            var marker_54fc881e03df668ac142bd1010684ff1 = L.marker(
+                [59.914876480000004, 10.76653368],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e7045ce31f0527aefd6f0cb3573d0d50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8702beddeaf661506049d4268feb2b1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3953a1b197481f32d0b796b974e606c = $(`<div id="html_a3953a1b197481f32d0b796b974e606c" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 14, Day 0)<br>Points: 25</div>`)[0];
+                popup_8702beddeaf661506049d4268feb2b1c.setContent(html_a3953a1b197481f32d0b796b974e606c);
+            
+        
+
+        marker_54fc881e03df668ac142bd1010684ff1.bindPopup(popup_8702beddeaf661506049d4268feb2b1c)
+        ;
+
+        
+    
+    
+                marker_54fc881e03df668ac142bd1010684ff1.setIcon(icon_e7045ce31f0527aefd6f0cb3573d0d50);
+            
+    
+            var marker_42533330b7c281bf69199ff22e6e80fd = L.marker(
+                [59.913953, 10.766461971428571],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_5a327df9532c701a72d6b6698f859189 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98e5533b3a46be371137b9cd1608bae7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9ffb9ebc84832ef889294b8068db749 = $(`<div id="html_f9ffb9ebc84832ef889294b8068db749" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 14, Day 1)<br>Points: 35</div>`)[0];
+                popup_98e5533b3a46be371137b9cd1608bae7.setContent(html_f9ffb9ebc84832ef889294b8068db749);
+            
+        
+
+        marker_42533330b7c281bf69199ff22e6e80fd.bindPopup(popup_98e5533b3a46be371137b9cd1608bae7)
+        ;
+
+        
+    
+    
+                marker_42533330b7c281bf69199ff22e6e80fd.setIcon(icon_5a327df9532c701a72d6b6698f859189);
+            
+    
+            var marker_0263ce3f108cfb1dc49d289a8fbf52d2 = L.marker(
+                [59.91649076086956, 10.766343],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e0c878eae66eee172fa5542436477ac3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff3116a300a84d2aa0c5210bda3b3fcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_087d458670b8e26b267910c7108e48df = $(`<div id="html_087d458670b8e26b267910c7108e48df" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 14, Day 2)<br>Points: 46</div>`)[0];
+                popup_ff3116a300a84d2aa0c5210bda3b3fcb.setContent(html_087d458670b8e26b267910c7108e48df);
+            
+        
+
+        marker_0263ce3f108cfb1dc49d289a8fbf52d2.bindPopup(popup_ff3116a300a84d2aa0c5210bda3b3fcb)
+        ;
+
+        
+    
+    
+                marker_0263ce3f108cfb1dc49d289a8fbf52d2.setIcon(icon_e0c878eae66eee172fa5542436477ac3);
+            
+    
+            var marker_491e3055b8050046b915d362e9199723 = L.marker(
+                [59.916541321428575, 10.767607857142854],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_f4041982063daea1de3d3ee18c4696ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a459132d0aaabf37c2a7f8886f4ed0f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4979d8592f1faba5fdf2b534e695ca91 = $(`<div id="html_4979d8592f1faba5fdf2b534e695ca91" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 14, Day 3)<br>Points: 28</div>`)[0];
+                popup_a459132d0aaabf37c2a7f8886f4ed0f0.setContent(html_4979d8592f1faba5fdf2b534e695ca91);
+            
+        
+
+        marker_491e3055b8050046b915d362e9199723.bindPopup(popup_a459132d0aaabf37c2a7f8886f4ed0f0)
+        ;
+
+        
+    
+    
+                marker_491e3055b8050046b915d362e9199723.setIcon(icon_f4041982063daea1de3d3ee18c4696ad);
+            
+    
+            var marker_562c3313bf54b6b897975369686f874c = L.marker(
+                [59.91537895945946, 10.766433918918919],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_7eeec5e0911cf4c7c5fcef71455a6b38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6133245eb9c461d0644b29b2510d877 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4b209ae64b56844727ca9230fd042a0 = $(`<div id="html_f4b209ae64b56844727ca9230fd042a0" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 14, Day 4)<br>Points: 74</div>`)[0];
+                popup_f6133245eb9c461d0644b29b2510d877.setContent(html_f4b209ae64b56844727ca9230fd042a0);
+            
+        
+
+        marker_562c3313bf54b6b897975369686f874c.bindPopup(popup_f6133245eb9c461d0644b29b2510d877)
+        ;
+
+        
+    
+    
+                marker_562c3313bf54b6b897975369686f874c.setIcon(icon_7eeec5e0911cf4c7c5fcef71455a6b38);
+            
+    
+            var marker_d41249d6ce4cec0702b178c92a4e9655 = L.marker(
+                [59.91474860227274, 10.766211238636362],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_b62945afe47fb9084d2d2b0daa0b0e13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_160651fda530a0e1844fe31e06e19ce9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82075d99e3b0c91d3902a639f21f1672 = $(`<div id="html_82075d99e3b0c91d3902a639f21f1672" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 14, Day 5)<br>Points: 88</div>`)[0];
+                popup_160651fda530a0e1844fe31e06e19ce9.setContent(html_82075d99e3b0c91d3902a639f21f1672);
+            
+        
+
+        marker_d41249d6ce4cec0702b178c92a4e9655.bindPopup(popup_160651fda530a0e1844fe31e06e19ce9)
+        ;
+
+        
+    
+    
+                marker_d41249d6ce4cec0702b178c92a4e9655.setIcon(icon_b62945afe47fb9084d2d2b0daa0b0e13);
+            
+    
+            var marker_de8a895fe1b6ba177fc9b42f94b69856 = L.marker(
+                [59.91427551562501, 10.767082312500001],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_73f7938fd8dec50c58b862f64264cb16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b427cd546074e2937f764d643a29117 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b13a10860001da3ae7e2ed1a75697ec4 = $(`<div id="html_b13a10860001da3ae7e2ed1a75697ec4" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 14, Day 6)<br>Points: 64</div>`)[0];
+                popup_5b427cd546074e2937f764d643a29117.setContent(html_b13a10860001da3ae7e2ed1a75697ec4);
+            
+        
+
+        marker_de8a895fe1b6ba177fc9b42f94b69856.bindPopup(popup_5b427cd546074e2937f764d643a29117)
+        ;
+
+        
+    
+    
+                marker_de8a895fe1b6ba177fc9b42f94b69856.setIcon(icon_73f7938fd8dec50c58b862f64264cb16);
+            
+    
+            var marker_bfbe73493f5b800cc8f717ecc66e6dbe = L.marker(
+                [59.956706133333334, 10.759734433333335],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_50001015c3aa89c8fa502e8095efc64d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35f9d8a38c370cf0e9663044943a0114 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca78d3abc448565ad55cf3847977cc0b = $(`<div id="html_ca78d3abc448565ad55cf3847977cc0b" style="width: 100.0%; height: 100.0%;">Cluster 15</div>`)[0];
+                popup_35f9d8a38c370cf0e9663044943a0114.setContent(html_ca78d3abc448565ad55cf3847977cc0b);
+            
+        
+
+        marker_bfbe73493f5b800cc8f717ecc66e6dbe.bindPopup(popup_35f9d8a38c370cf0e9663044943a0114)
+        ;
+
+        
+    
+    
+                marker_bfbe73493f5b800cc8f717ecc66e6dbe.setIcon(icon_50001015c3aa89c8fa502e8095efc64d);
+            
+    
+            var marker_e24a751f3d2ceedc9b3373331748b7aa = L.marker(
+                [59.95805325, 10.761848749999999],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_6da941f5e3b8f56ff0679901c1af8157 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df3bb9099dfbe86643768d5a4eb5e533 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef30c696ac4592da92f53b6aacd52be9 = $(`<div id="html_ef30c696ac4592da92f53b6aacd52be9" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 15, Day 0)<br>Points: 4</div>`)[0];
+                popup_df3bb9099dfbe86643768d5a4eb5e533.setContent(html_ef30c696ac4592da92f53b6aacd52be9);
+            
+        
+
+        marker_e24a751f3d2ceedc9b3373331748b7aa.bindPopup(popup_df3bb9099dfbe86643768d5a4eb5e533)
+        ;
+
+        
+    
+    
+                marker_e24a751f3d2ceedc9b3373331748b7aa.setIcon(icon_6da941f5e3b8f56ff0679901c1af8157);
+            
+    
+            var marker_b6febeca8f170482a22b538ff4fae812 = L.marker(
+                [59.95308, 10.7706658],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_37683c04f78682db3dcf18797324a2f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4371727e501b08d34720f6c501f23096 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff0a21ff6b16b596e9af675d61f56c7b = $(`<div id="html_ff0a21ff6b16b596e9af675d61f56c7b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 15, Day 1)<br>Points: 5</div>`)[0];
+                popup_4371727e501b08d34720f6c501f23096.setContent(html_ff0a21ff6b16b596e9af675d61f56c7b);
+            
+        
+
+        marker_b6febeca8f170482a22b538ff4fae812.bindPopup(popup_4371727e501b08d34720f6c501f23096)
+        ;
+
+        
+    
+    
+                marker_b6febeca8f170482a22b538ff4fae812.setIcon(icon_37683c04f78682db3dcf18797324a2f0);
+            
+    
+            var marker_95982576674226ccb08316e72a886d66 = L.marker(
+                [59.95397485714285, 10.756754428571428],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_313573706c2cb2f96f42bd1ecfa04578 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c43dd343df7825d761fc4ba8d74e3ef2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9396ee2d0e2c442d59ee4e94e1545f5f = $(`<div id="html_9396ee2d0e2c442d59ee4e94e1545f5f" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 15, Day 2)<br>Points: 7</div>`)[0];
+                popup_c43dd343df7825d761fc4ba8d74e3ef2.setContent(html_9396ee2d0e2c442d59ee4e94e1545f5f);
+            
+        
+
+        marker_95982576674226ccb08316e72a886d66.bindPopup(popup_c43dd343df7825d761fc4ba8d74e3ef2)
+        ;
+
+        
+    
+    
+                marker_95982576674226ccb08316e72a886d66.setIcon(icon_313573706c2cb2f96f42bd1ecfa04578);
+            
+    
+            var marker_55a622b61d2135bed0dbc39a476cea93 = L.marker(
+                [59.96341457142857, 10.758090999999999],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c992f2851a0b850180f1706ff35b7da0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_212261a78f06f97b5e36f991c08946e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb8da99059ca802c2c25b391c829c651 = $(`<div id="html_eb8da99059ca802c2c25b391c829c651" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 15, Day 3)<br>Points: 7</div>`)[0];
+                popup_212261a78f06f97b5e36f991c08946e6.setContent(html_eb8da99059ca802c2c25b391c829c651);
+            
+        
+
+        marker_55a622b61d2135bed0dbc39a476cea93.bindPopup(popup_212261a78f06f97b5e36f991c08946e6)
+        ;
+
+        
+    
+    
+                marker_55a622b61d2135bed0dbc39a476cea93.setIcon(icon_c992f2851a0b850180f1706ff35b7da0);
+            
+    
+            var marker_a7f6c6091c67312da74d18dd1562c8fb = L.marker(
+                [59.95644725, 10.760657125],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_23ea562e49e8b0cb1087009bc5b3851e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9081ffb9dd6f73b79098934f4b254be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_066dcd7f93fecf1db5f86d03cc29512c = $(`<div id="html_066dcd7f93fecf1db5f86d03cc29512c" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 15, Day 4)<br>Points: 8</div>`)[0];
+                popup_a9081ffb9dd6f73b79098934f4b254be.setContent(html_066dcd7f93fecf1db5f86d03cc29512c);
+            
+        
+
+        marker_a7f6c6091c67312da74d18dd1562c8fb.bindPopup(popup_a9081ffb9dd6f73b79098934f4b254be)
+        ;
+
+        
+    
+    
+                marker_a7f6c6091c67312da74d18dd1562c8fb.setIcon(icon_23ea562e49e8b0cb1087009bc5b3851e);
+            
+    
+            var marker_0084dccba83b5492b141c74a4f12c7b3 = L.marker(
+                [59.95715831578947, 10.760982631578946],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e332067eda52eddd23fbe244424ef7ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60570d9e062f872a136d699323e26ae1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ad46360e7d532f26679ad5448b1919a = $(`<div id="html_0ad46360e7d532f26679ad5448b1919a" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 15, Day 5)<br>Points: 19</div>`)[0];
+                popup_60570d9e062f872a136d699323e26ae1.setContent(html_0ad46360e7d532f26679ad5448b1919a);
+            
+        
+
+        marker_0084dccba83b5492b141c74a4f12c7b3.bindPopup(popup_60570d9e062f872a136d699323e26ae1)
+        ;
+
+        
+    
+    
+                marker_0084dccba83b5492b141c74a4f12c7b3.setIcon(icon_e332067eda52eddd23fbe244424ef7ad);
+            
+    
+            var marker_afe2c16a9d018f15657e483880715ddd = L.marker(
+                [59.954544299999995, 10.753549699999999],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_4216487ed8b869d1158def703adb4a46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d52a6019bed3094fb548d9da49d03eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_125c455ced2fb501eb78bfe14d86152e = $(`<div id="html_125c455ced2fb501eb78bfe14d86152e" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 15, Day 6)<br>Points: 10</div>`)[0];
+                popup_2d52a6019bed3094fb548d9da49d03eb.setContent(html_125c455ced2fb501eb78bfe14d86152e);
+            
+        
+
+        marker_afe2c16a9d018f15657e483880715ddd.bindPopup(popup_2d52a6019bed3094fb548d9da49d03eb)
+        ;
+
+        
+    
+    
+                marker_afe2c16a9d018f15657e483880715ddd.setIcon(icon_4216487ed8b869d1158def703adb4a46);
+            
+    
+            var marker_bb51750b753ba20360895fb3c405e07e = L.marker(
+                [59.92901706293706, 10.73753063986014],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_4ddca5054edc693636e8f0b35edc95d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f16d85d64e63f990bba9161f3fb814c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b82df51bf7d96e517d12b383dd0689ad = $(`<div id="html_b82df51bf7d96e517d12b383dd0689ad" style="width: 100.0%; height: 100.0%;">Cluster 16</div>`)[0];
+                popup_6f16d85d64e63f990bba9161f3fb814c.setContent(html_b82df51bf7d96e517d12b383dd0689ad);
+            
+        
+
+        marker_bb51750b753ba20360895fb3c405e07e.bindPopup(popup_6f16d85d64e63f990bba9161f3fb814c)
+        ;
+
+        
+    
+    
+                marker_bb51750b753ba20360895fb3c405e07e.setIcon(icon_4ddca5054edc693636e8f0b35edc95d8);
+            
+    
+            var marker_d6f84b8cab07e985f97e16a71bed67cb = L.marker(
+                [59.92945922580645, 10.737700387096776],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c3cd98f13ab7954e0bc9b18f1e1e854c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9f1fa2286e9fd13b44c9f56ab76e707 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a5b3c0839e591f8d3cd472ccd4f36ca = $(`<div id="html_5a5b3c0839e591f8d3cd472ccd4f36ca" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 16, Day 0)<br>Points: 31</div>`)[0];
+                popup_b9f1fa2286e9fd13b44c9f56ab76e707.setContent(html_5a5b3c0839e591f8d3cd472ccd4f36ca);
+            
+        
+
+        marker_d6f84b8cab07e985f97e16a71bed67cb.bindPopup(popup_b9f1fa2286e9fd13b44c9f56ab76e707)
+        ;
+
+        
+    
+    
+                marker_d6f84b8cab07e985f97e16a71bed67cb.setIcon(icon_c3cd98f13ab7954e0bc9b18f1e1e854c);
+            
+    
+            var marker_b45dfa9fabe2aa7f678558362c18dc91 = L.marker(
+                [59.9289735, 10.736367156250001],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_231d3a39715adbd67a2df570605aa121 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b9493a63f6fa77c9141787ef4e590a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a99ce5e19f53ea899212b57f7f1af2f5 = $(`<div id="html_a99ce5e19f53ea899212b57f7f1af2f5" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 16, Day 1)<br>Points: 32</div>`)[0];
+                popup_2b9493a63f6fa77c9141787ef4e590a1.setContent(html_a99ce5e19f53ea899212b57f7f1af2f5);
+            
+        
+
+        marker_b45dfa9fabe2aa7f678558362c18dc91.bindPopup(popup_2b9493a63f6fa77c9141787ef4e590a1)
+        ;
+
+        
+    
+    
+                marker_b45dfa9fabe2aa7f678558362c18dc91.setIcon(icon_231d3a39715adbd67a2df570605aa121);
+            
+    
+            var marker_d28146d235a6b713fe2321a822e32fdf = L.marker(
+                [59.930223153846164, 10.737094423076922],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_aa57a2a5bc750c5425e225825ef608d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84e6b1ad82f2ff778882628183bfa20f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e1fdf22d88a6496de370d42077854ed = $(`<div id="html_5e1fdf22d88a6496de370d42077854ed" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 16, Day 2)<br>Points: 26</div>`)[0];
+                popup_84e6b1ad82f2ff778882628183bfa20f.setContent(html_5e1fdf22d88a6496de370d42077854ed);
+            
+        
+
+        marker_d28146d235a6b713fe2321a822e32fdf.bindPopup(popup_84e6b1ad82f2ff778882628183bfa20f)
+        ;
+
+        
+    
+    
+                marker_d28146d235a6b713fe2321a822e32fdf.setIcon(icon_aa57a2a5bc750c5425e225825ef608d8);
+            
+    
+            var marker_a33374fc03dcb83fcb1f1e04949b5faa = L.marker(
+                [59.930316937499995, 10.74116603125],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e606c9d4f2c6b9ca1144ea68bf3d4811 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1e28ae05ffee67da570b3b2f90b77a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7f4cfa1bd576a429284441a10c61868 = $(`<div id="html_c7f4cfa1bd576a429284441a10c61868" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 16, Day 3)<br>Points: 32</div>`)[0];
+                popup_b1e28ae05ffee67da570b3b2f90b77a4.setContent(html_c7f4cfa1bd576a429284441a10c61868);
+            
+        
+
+        marker_a33374fc03dcb83fcb1f1e04949b5faa.bindPopup(popup_b1e28ae05ffee67da570b3b2f90b77a4)
+        ;
+
+        
+    
+    
+                marker_a33374fc03dcb83fcb1f1e04949b5faa.setIcon(icon_e606c9d4f2c6b9ca1144ea68bf3d4811);
+            
+    
+            var marker_39a2a197b41fa737a7fd7b35308fc310 = L.marker(
+                [59.92740642372882, 10.736327728813556],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_d8a70dfc8c635f442339d0cb3db13cba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a5eab9fef4f22c2f807555f2686ec75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_694b8d95a70a61888339180786538e51 = $(`<div id="html_694b8d95a70a61888339180786538e51" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 16, Day 4)<br>Points: 59</div>`)[0];
+                popup_0a5eab9fef4f22c2f807555f2686ec75.setContent(html_694b8d95a70a61888339180786538e51);
+            
+        
+
+        marker_39a2a197b41fa737a7fd7b35308fc310.bindPopup(popup_0a5eab9fef4f22c2f807555f2686ec75)
+        ;
+
+        
+    
+    
+                marker_39a2a197b41fa737a7fd7b35308fc310.setIcon(icon_d8a70dfc8c635f442339d0cb3db13cba);
+            
+    
+            var marker_ac4330c5b505f5e8a1a4ff4da434670e = L.marker(
+                [59.929353527272724, 10.737663236363634],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_46302e2592ff66efcc15aa084c2083f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83802e944212480293a306dea34943ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_063f016e054b87b251dec829feffe887 = $(`<div id="html_063f016e054b87b251dec829feffe887" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 16, Day 5)<br>Points: 55</div>`)[0];
+                popup_83802e944212480293a306dea34943ce.setContent(html_063f016e054b87b251dec829feffe887);
+            
+        
+
+        marker_ac4330c5b505f5e8a1a4ff4da434670e.bindPopup(popup_83802e944212480293a306dea34943ce)
+        ;
+
+        
+    
+    
+                marker_ac4330c5b505f5e8a1a4ff4da434670e.setIcon(icon_46302e2592ff66efcc15aa084c2083f5);
+            
+    
+            var marker_9d75618a171bff0ac0d23dc30151b421 = L.marker(
+                [59.92884558823529, 10.737347450980392],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_87d1f31c73ea8c92cb4a208828e45628 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7bc02c50994d5b80436fc4e4f9abf27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e23a8da22f9be7c523c079291dfdcf1 = $(`<div id="html_9e23a8da22f9be7c523c079291dfdcf1" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 16, Day 6)<br>Points: 51</div>`)[0];
+                popup_c7bc02c50994d5b80436fc4e4f9abf27.setContent(html_9e23a8da22f9be7c523c079291dfdcf1);
+            
+        
+
+        marker_9d75618a171bff0ac0d23dc30151b421.bindPopup(popup_c7bc02c50994d5b80436fc4e4f9abf27)
+        ;
+
+        
+    
+    
+                marker_9d75618a171bff0ac0d23dc30151b421.setIcon(icon_87d1f31c73ea8c92cb4a208828e45628);
+            
+    
+            var marker_69f22c36f8ab1c4544918319880ff4ca = L.marker(
+                [59.90577043814433, 10.74734206185567],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_24dd176316b791d4b63964865ffb9ecc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f6d8c698cdf53044beea95760fb005e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fbab61dba7d452e5bd06f86a31c4224 = $(`<div id="html_1fbab61dba7d452e5bd06f86a31c4224" style="width: 100.0%; height: 100.0%;">Cluster 17</div>`)[0];
+                popup_8f6d8c698cdf53044beea95760fb005e.setContent(html_1fbab61dba7d452e5bd06f86a31c4224);
+            
+        
+
+        marker_69f22c36f8ab1c4544918319880ff4ca.bindPopup(popup_8f6d8c698cdf53044beea95760fb005e)
+        ;
+
+        
+    
+    
+                marker_69f22c36f8ab1c4544918319880ff4ca.setIcon(icon_24dd176316b791d4b63964865ffb9ecc);
+            
+    
+            var marker_e690f9664da4ad4c114b1b7c32266074 = L.marker(
+                [59.90579204444444, 10.74719528888889],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_bc90d8b48e73f873b9150acff7119607 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_154475ac012014b5ca1abcce20c15993 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60ea87108bc3d029f2451dec01526d06 = $(`<div id="html_60ea87108bc3d029f2451dec01526d06" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 17, Day 0)<br>Points: 45</div>`)[0];
+                popup_154475ac012014b5ca1abcce20c15993.setContent(html_60ea87108bc3d029f2451dec01526d06);
+            
+        
+
+        marker_e690f9664da4ad4c114b1b7c32266074.bindPopup(popup_154475ac012014b5ca1abcce20c15993)
+        ;
+
+        
+    
+    
+                marker_e690f9664da4ad4c114b1b7c32266074.setIcon(icon_bc90d8b48e73f873b9150acff7119607);
+            
+    
+            var marker_098baec15b908375c14c0527906a0cd2 = L.marker(
+                [59.906763325, 10.7476381],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_78aaaf7f2afc5c180fe92cabed283780 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01dd7d88f8cfb979958ea278e80e5028 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa11a7022b190a73df528ce973f86b2c = $(`<div id="html_fa11a7022b190a73df528ce973f86b2c" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 17, Day 1)<br>Points: 40</div>`)[0];
+                popup_01dd7d88f8cfb979958ea278e80e5028.setContent(html_fa11a7022b190a73df528ce973f86b2c);
+            
+        
+
+        marker_098baec15b908375c14c0527906a0cd2.bindPopup(popup_01dd7d88f8cfb979958ea278e80e5028)
+        ;
+
+        
+    
+    
+                marker_098baec15b908375c14c0527906a0cd2.setIcon(icon_78aaaf7f2afc5c180fe92cabed283780);
+            
+    
+            var marker_5eacd8f4a3153f9d709c7da3de91481d = L.marker(
+                [59.90512375609755, 10.746563585365852],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_b035b97039723556b17a2f4ed6c2c393 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b4fe3248cfcdb796c11dc66fe66d2d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d5458f12004bdbe348a8917278d7533 = $(`<div id="html_1d5458f12004bdbe348a8917278d7533" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 17, Day 2)<br>Points: 41</div>`)[0];
+                popup_2b4fe3248cfcdb796c11dc66fe66d2d6.setContent(html_1d5458f12004bdbe348a8917278d7533);
+            
+        
+
+        marker_5eacd8f4a3153f9d709c7da3de91481d.bindPopup(popup_2b4fe3248cfcdb796c11dc66fe66d2d6)
+        ;
+
+        
+    
+    
+                marker_5eacd8f4a3153f9d709c7da3de91481d.setIcon(icon_b035b97039723556b17a2f4ed6c2c393);
+            
+    
+            var marker_bcbcddc5ff76a18b2d11d2a361b17061 = L.marker(
+                [59.90561741304348, 10.747903326086957],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e3d52741d28377ee90456387742abe3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26389d03772efc3b398bf1bb81a89bc1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dffd7c7acb9a044850cc581d53107056 = $(`<div id="html_dffd7c7acb9a044850cc581d53107056" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 17, Day 3)<br>Points: 46</div>`)[0];
+                popup_26389d03772efc3b398bf1bb81a89bc1.setContent(html_dffd7c7acb9a044850cc581d53107056);
+            
+        
+
+        marker_bcbcddc5ff76a18b2d11d2a361b17061.bindPopup(popup_26389d03772efc3b398bf1bb81a89bc1)
+        ;
+
+        
+    
+    
+                marker_bcbcddc5ff76a18b2d11d2a361b17061.setIcon(icon_e3d52741d28377ee90456387742abe3a);
+            
+    
+            var marker_89f327ef54c9314bd54e67d7ebf40b24 = L.marker(
+                [59.90581385245902, 10.747533655737703],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_d6a88522a9a2b63e913fc85dc3779c31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abeb70458335f0d9d8f55528459c6233 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0fd008c7224cd52f60483883f25c961 = $(`<div id="html_c0fd008c7224cd52f60483883f25c961" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 17, Day 4)<br>Points: 61</div>`)[0];
+                popup_abeb70458335f0d9d8f55528459c6233.setContent(html_c0fd008c7224cd52f60483883f25c961);
+            
+        
+
+        marker_89f327ef54c9314bd54e67d7ebf40b24.bindPopup(popup_abeb70458335f0d9d8f55528459c6233)
+        ;
+
+        
+    
+    
+                marker_89f327ef54c9314bd54e67d7ebf40b24.setIcon(icon_d6a88522a9a2b63e913fc85dc3779c31);
+            
+    
+            var marker_1ed6bfc9652436d3e1260454feec2e43 = L.marker(
+                [59.9060035375, 10.747402087500001],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_9ef6593274682e2a332577ca5d028d1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_850c651f037d2c2188591180b3a3bc0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a10a7a766f455eec56312dc9df6f1a48 = $(`<div id="html_a10a7a766f455eec56312dc9df6f1a48" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 17, Day 5)<br>Points: 80</div>`)[0];
+                popup_850c651f037d2c2188591180b3a3bc0f.setContent(html_a10a7a766f455eec56312dc9df6f1a48);
+            
+        
+
+        marker_1ed6bfc9652436d3e1260454feec2e43.bindPopup(popup_850c651f037d2c2188591180b3a3bc0f)
+        ;
+
+        
+    
+    
+                marker_1ed6bfc9652436d3e1260454feec2e43.setIcon(icon_9ef6593274682e2a332577ca5d028d1e);
+            
+    
+            var marker_c46cd968a2f41ad584f8f79c8f28b199 = L.marker(
+                [59.905391359999996, 10.747133706666666],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_942b6f89d66c0b1780579c753bb97b76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba28eb86d11ec3347ea3275daa1d110a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ba3b9a17617c982558bd9d67bd41124 = $(`<div id="html_8ba3b9a17617c982558bd9d67bd41124" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 17, Day 6)<br>Points: 75</div>`)[0];
+                popup_ba28eb86d11ec3347ea3275daa1d110a.setContent(html_8ba3b9a17617c982558bd9d67bd41124);
+            
+        
+
+        marker_c46cd968a2f41ad584f8f79c8f28b199.bindPopup(popup_ba28eb86d11ec3347ea3275daa1d110a)
+        ;
+
+        
+    
+    
+                marker_c46cd968a2f41ad584f8f79c8f28b199.setIcon(icon_942b6f89d66c0b1780579c753bb97b76);
+            
+    
+            var marker_f3f18ea0fd449c28b21971a94a8a71bc = L.marker(
+                [59.91318096064815, 10.734681627314815],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_0abeb8f76bfaf54c62d2a052c24a5fd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f2e2fb683140f6113df5117d96ba955 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_460439129dcb86754fab06c22a91c285 = $(`<div id="html_460439129dcb86754fab06c22a91c285" style="width: 100.0%; height: 100.0%;">Cluster 18</div>`)[0];
+                popup_0f2e2fb683140f6113df5117d96ba955.setContent(html_460439129dcb86754fab06c22a91c285);
+            
+        
+
+        marker_f3f18ea0fd449c28b21971a94a8a71bc.bindPopup(popup_0f2e2fb683140f6113df5117d96ba955)
+        ;
+
+        
+    
+    
+                marker_f3f18ea0fd449c28b21971a94a8a71bc.setIcon(icon_0abeb8f76bfaf54c62d2a052c24a5fd7);
+            
+    
+            var marker_fc0c9929a87d13d1e6beecd7e1e72c10 = L.marker(
+                [59.91442134615385, 10.733667153846154],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_6827e9d59cc38d109ba46581c7eb65f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e25b81f460bb1e596d22f481951c38a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bf9cbd90605a82ef1325a99086c5867 = $(`<div id="html_5bf9cbd90605a82ef1325a99086c5867" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 18, Day 0)<br>Points: 52</div>`)[0];
+                popup_e25b81f460bb1e596d22f481951c38a8.setContent(html_5bf9cbd90605a82ef1325a99086c5867);
+            
+        
+
+        marker_fc0c9929a87d13d1e6beecd7e1e72c10.bindPopup(popup_e25b81f460bb1e596d22f481951c38a8)
+        ;
+
+        
+    
+    
+                marker_fc0c9929a87d13d1e6beecd7e1e72c10.setIcon(icon_6827e9d59cc38d109ba46581c7eb65f1);
+            
+    
+            var marker_2e6c95e38c1f3a6e34f56cb3f18f50bd = L.marker(
+                [59.913422739999994, 10.73505712],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_6a4ef85ebfec0472c007305b55d6337d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_794328b96814f43fa45e8846ffeef7e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f98f59d1700c9fb4abd1cff5d1eb0b2 = $(`<div id="html_2f98f59d1700c9fb4abd1cff5d1eb0b2" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 18, Day 1)<br>Points: 50</div>`)[0];
+                popup_794328b96814f43fa45e8846ffeef7e1.setContent(html_2f98f59d1700c9fb4abd1cff5d1eb0b2);
+            
+        
+
+        marker_2e6c95e38c1f3a6e34f56cb3f18f50bd.bindPopup(popup_794328b96814f43fa45e8846ffeef7e1)
+        ;
+
+        
+    
+    
+                marker_2e6c95e38c1f3a6e34f56cb3f18f50bd.setIcon(icon_6a4ef85ebfec0472c007305b55d6337d);
+            
+    
+            var marker_4d4b74b39ec0f41507c897e4c2e826d7 = L.marker(
+                [59.912792302325585, 10.735093906976745],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_7f528bee4ae802664a26f789a7988e24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d868748df46f77b923fbbadc3fb0de1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_301e581367dda1354f0c59ed3e222b24 = $(`<div id="html_301e581367dda1354f0c59ed3e222b24" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 18, Day 2)<br>Points: 43</div>`)[0];
+                popup_d868748df46f77b923fbbadc3fb0de1f.setContent(html_301e581367dda1354f0c59ed3e222b24);
+            
+        
+
+        marker_4d4b74b39ec0f41507c897e4c2e826d7.bindPopup(popup_d868748df46f77b923fbbadc3fb0de1f)
+        ;
+
+        
+    
+    
+                marker_4d4b74b39ec0f41507c897e4c2e826d7.setIcon(icon_7f528bee4ae802664a26f789a7988e24);
+            
+    
+            var marker_5b9c685105fe81ce766c98676ff9b03d = L.marker(
+                [59.91415307692307, 10.733537461538463],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_ef51aa7ea54d051f2224a175d090c5a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_751411abb9fb02ab6ff9bbb284988e8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcc7760da5ca96aa0fd3b6a4f3322547 = $(`<div id="html_bcc7760da5ca96aa0fd3b6a4f3322547" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 18, Day 3)<br>Points: 39</div>`)[0];
+                popup_751411abb9fb02ab6ff9bbb284988e8b.setContent(html_bcc7760da5ca96aa0fd3b6a4f3322547);
+            
+        
+
+        marker_5b9c685105fe81ce766c98676ff9b03d.bindPopup(popup_751411abb9fb02ab6ff9bbb284988e8b)
+        ;
+
+        
+    
+    
+                marker_5b9c685105fe81ce766c98676ff9b03d.setIcon(icon_ef51aa7ea54d051f2224a175d090c5a6);
+            
+    
+            var marker_8b36bfa3afc61ab8904a0a5efaecbf5e = L.marker(
+                [59.91177107407407, 10.734503049382715],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_604cdc7321b5b1fb80f360e09ce87276 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5bb4c1debff09e00b168c3616f53cc6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15a3db2bf36a8a92889a60c3e9965398 = $(`<div id="html_15a3db2bf36a8a92889a60c3e9965398" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 18, Day 4)<br>Points: 81</div>`)[0];
+                popup_5bb4c1debff09e00b168c3616f53cc6c.setContent(html_15a3db2bf36a8a92889a60c3e9965398);
+            
+        
+
+        marker_8b36bfa3afc61ab8904a0a5efaecbf5e.bindPopup(popup_5bb4c1debff09e00b168c3616f53cc6c)
+        ;
+
+        
+    
+    
+                marker_8b36bfa3afc61ab8904a0a5efaecbf5e.setIcon(icon_604cdc7321b5b1fb80f360e09ce87276);
+            
+    
+            var marker_55cdd5e13862e856e9e6dadb96cb8617 = L.marker(
+                [59.913848084337346, 10.735516722891568],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c5e02ddd16110a14ff3adb823849de4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69e00d213046fff5adb8484a0d91181d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0588734359af37a8015dad03e42a64af = $(`<div id="html_0588734359af37a8015dad03e42a64af" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 18, Day 5)<br>Points: 83</div>`)[0];
+                popup_69e00d213046fff5adb8484a0d91181d.setContent(html_0588734359af37a8015dad03e42a64af);
+            
+        
+
+        marker_55cdd5e13862e856e9e6dadb96cb8617.bindPopup(popup_69e00d213046fff5adb8484a0d91181d)
+        ;
+
+        
+    
+    
+                marker_55cdd5e13862e856e9e6dadb96cb8617.setIcon(icon_c5e02ddd16110a14ff3adb823849de4e);
+            
+    
+            var marker_5da828b3167148af98e27e3e3c73a8c0 = L.marker(
+                [59.91271715476191, 10.734753345238095],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_e8d420381ad4a7e6e58f8755cf05c145 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f9e44eca7edd9fd35a6a14b47337a5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa579b1ea9c98eba27b6a0a7e997c17b = $(`<div id="html_fa579b1ea9c98eba27b6a0a7e997c17b" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 18, Day 6)<br>Points: 84</div>`)[0];
+                popup_3f9e44eca7edd9fd35a6a14b47337a5a.setContent(html_fa579b1ea9c98eba27b6a0a7e997c17b);
+            
+        
+
+        marker_5da828b3167148af98e27e3e3c73a8c0.bindPopup(popup_3f9e44eca7edd9fd35a6a14b47337a5a)
+        ;
+
+        
+    
+    
+                marker_5da828b3167148af98e27e3e3c73a8c0.setIcon(icon_e8d420381ad4a7e6e58f8755cf05c145);
+            
+    
+            var marker_19c2ce1cd617fa3fa94c33c267a0ee64 = L.marker(
+                [59.913420618677044, 10.756490344357976],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_4aef5d736f77ae95e1dd9cc2cc132c09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b8988e1eb41794f914b1be88947e7fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e1c98f6a42df98b0a8f500da4ed84f7 = $(`<div id="html_0e1c98f6a42df98b0a8f500da4ed84f7" style="width: 100.0%; height: 100.0%;">Cluster 19</div>`)[0];
+                popup_3b8988e1eb41794f914b1be88947e7fd.setContent(html_0e1c98f6a42df98b0a8f500da4ed84f7);
+            
+        
+
+        marker_19c2ce1cd617fa3fa94c33c267a0ee64.bindPopup(popup_3b8988e1eb41794f914b1be88947e7fd)
+        ;
+
+        
+    
+    
+                marker_19c2ce1cd617fa3fa94c33c267a0ee64.setIcon(icon_4aef5d736f77ae95e1dd9cc2cc132c09);
+            
+    
+            var marker_549fc4ec757f3ad5cbe953c369417372 = L.marker(
+                [59.91343644999999, 10.756394324999999],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_03735e21a44fc5bbfa491a8b769a799d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d7125652e7756887fa924b6a47f26ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0a83bf870b382c8736e8bd14e2a65ef = $(`<div id="html_a0a83bf870b382c8736e8bd14e2a65ef" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 19, Day 0)<br>Points: 40</div>`)[0];
+                popup_5d7125652e7756887fa924b6a47f26ee.setContent(html_a0a83bf870b382c8736e8bd14e2a65ef);
+            
+        
+
+        marker_549fc4ec757f3ad5cbe953c369417372.bindPopup(popup_5d7125652e7756887fa924b6a47f26ee)
+        ;
+
+        
+    
+    
+                marker_549fc4ec757f3ad5cbe953c369417372.setIcon(icon_03735e21a44fc5bbfa491a8b769a799d);
+            
+    
+            var marker_0ed37c9a07c80682f0faadbd5a8da506 = L.marker(
+                [59.91344034545455, 10.75700230909091],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_ccb1c8ae945a09a38f20b625adf4ad10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b50693dd51fddfc7036c901c1400fff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23c27678ff6fa3d2988be3de3eb9703a = $(`<div id="html_23c27678ff6fa3d2988be3de3eb9703a" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 19, Day 1)<br>Points: 55</div>`)[0];
+                popup_6b50693dd51fddfc7036c901c1400fff.setContent(html_23c27678ff6fa3d2988be3de3eb9703a);
+            
+        
+
+        marker_0ed37c9a07c80682f0faadbd5a8da506.bindPopup(popup_6b50693dd51fddfc7036c901c1400fff)
+        ;
+
+        
+    
+    
+                marker_0ed37c9a07c80682f0faadbd5a8da506.setIcon(icon_ccb1c8ae945a09a38f20b625adf4ad10);
+            
+    
+            var marker_acf0ba55acf92fcf70cdc56143b29d2c = L.marker(
+                [59.91376861403509, 10.756045649122807],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_365b758bedd3347ea0aaa8dd669b7517 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ded250a293f305afda31a369501f84d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3d1123cc39ba663735952212efe3744 = $(`<div id="html_f3d1123cc39ba663735952212efe3744" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 19, Day 2)<br>Points: 57</div>`)[0];
+                popup_3ded250a293f305afda31a369501f84d.setContent(html_f3d1123cc39ba663735952212efe3744);
+            
+        
+
+        marker_acf0ba55acf92fcf70cdc56143b29d2c.bindPopup(popup_3ded250a293f305afda31a369501f84d)
+        ;
+
+        
+    
+    
+                marker_acf0ba55acf92fcf70cdc56143b29d2c.setIcon(icon_365b758bedd3347ea0aaa8dd669b7517);
+            
+    
+            var marker_bb0c1c5d59a47dc93dcfea4377a16900 = L.marker(
+                [59.913091779999995, 10.75646422],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_58812dc2fff6834c59102537454446b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cea01b5d2a9ff427fd94be6540164e7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33ec38a7ac48ba4debe7156da03f53e3 = $(`<div id="html_33ec38a7ac48ba4debe7156da03f53e3" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 19, Day 3)<br>Points: 50</div>`)[0];
+                popup_cea01b5d2a9ff427fd94be6540164e7e.setContent(html_33ec38a7ac48ba4debe7156da03f53e3);
+            
+        
+
+        marker_bb0c1c5d59a47dc93dcfea4377a16900.bindPopup(popup_cea01b5d2a9ff427fd94be6540164e7e)
+        ;
+
+        
+    
+    
+                marker_bb0c1c5d59a47dc93dcfea4377a16900.setIcon(icon_58812dc2fff6834c59102537454446b7);
+            
+    
+            var marker_8930e513c828065caad1fea8e2fe9168 = L.marker(
+                [59.91318454205608, 10.756675392523364],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_c041501ee2e3e78aae4b58e52764ad22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35cd9c044638321c2a6d777eff8f0d24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eefbe0a3acd28dd1db7bf710ba826a28 = $(`<div id="html_eefbe0a3acd28dd1db7bf710ba826a28" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 19, Day 4)<br>Points: 107</div>`)[0];
+                popup_35cd9c044638321c2a6d777eff8f0d24.setContent(html_eefbe0a3acd28dd1db7bf710ba826a28);
+            
+        
+
+        marker_8930e513c828065caad1fea8e2fe9168.bindPopup(popup_35cd9c044638321c2a6d777eff8f0d24)
+        ;
+
+        
+    
+    
+                marker_8930e513c828065caad1fea8e2fe9168.setIcon(icon_c041501ee2e3e78aae4b58e52764ad22);
+            
+    
+            var marker_2f0c797e9edb9d306e096422641e0797 = L.marker(
+                [59.913606186274514, 10.756396205882353],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_55b8108ddff49c2f10532a4b9c3fdbe4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fef73a4d3fce791d45ac2491db6e1d80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_378564a2a82edfe225fb3fe24997d12f = $(`<div id="html_378564a2a82edfe225fb3fe24997d12f" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 19, Day 5)<br>Points: 102</div>`)[0];
+                popup_fef73a4d3fce791d45ac2491db6e1d80.setContent(html_378564a2a82edfe225fb3fe24997d12f);
+            
+        
+
+        marker_2f0c797e9edb9d306e096422641e0797.bindPopup(popup_fef73a4d3fce791d45ac2491db6e1d80)
+        ;
+
+        
+    
+    
+                marker_2f0c797e9edb9d306e096422641e0797.setIcon(icon_55b8108ddff49c2f10532a4b9c3fdbe4);
+            
+    
+            var marker_65f5e19a4a46ffbc41439d03982e48a2 = L.marker(
+                [59.91343246601941, 10.756414019417477],
+                {
+}
+            ).addTo(marker_cluster_0a322b49a6f4440745585028d6428961);
+        
+    
+            var icon_b663a36c16daa9bd1d6f348cef7abc39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_676aafc37783a2e5f2e5d2212701b7c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72480ce368b58a84a2b62fe779ecf297 = $(`<div id="html_72480ce368b58a84a2b62fe779ecf297" style="width: 100.0%; height: 100.0%;">Subcluster (Cluster 19, Day 6)<br>Points: 103</div>`)[0];
+                popup_676aafc37783a2e5f2e5d2212701b7c2.setContent(html_72480ce368b58a84a2b62fe779ecf297);
+            
+        
+
+        marker_65f5e19a4a46ffbc41439d03982e48a2.bindPopup(popup_676aafc37783a2e5f2e5d2212701b7c2)
+        ;
+
+        
+    
+    
+                marker_65f5e19a4a46ffbc41439d03982e48a2.setIcon(icon_b663a36c16daa9bd1d6f348cef7abc39);
+            
+    
+            marker_cluster_0a322b49a6f4440745585028d6428961.addTo(map_bf7fb7783451704c4a7874f0859ae18d);
+        
+    
+            var layer_control_43bd3ad7c6db10cbc903e33dfa17db23_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_187659f535662bc05a9f0eec8ffb1a0a,
+                },
+                overlays :  {
+                    "macro_element_0a322b49a6f4440745585028d6428961" : marker_cluster_0a322b49a6f4440745585028d6428961,
+                },
+            };
+            let layer_control_43bd3ad7c6db10cbc903e33dfa17db23 = L.control.layers(
+                layer_control_43bd3ad7c6db10cbc903e33dfa17db23_layers.base_layers,
+                layer_control_43bd3ad7c6db10cbc903e33dfa17db23_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_bf7fb7783451704c4a7874f0859ae18d);
+
+        
+</script>
+</html>
