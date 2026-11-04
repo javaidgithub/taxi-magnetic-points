@@ -1,0 +1,43 @@
+# Default configuration for the Magnetic Points pipeline.
+# Every value below mirrors a hard-coded value in the original notebooks
+# (see docs/CODE_REFERENCE.md). Change values here instead of editing code.
+
+paths:
+  raw_csv: data/raw/TripLog.csv                  # proprietary AbsoluIT data (NOT in repo)
+  preprocessed_csv: data/processed/TripLog_DataSet.csv
+  clustered_csv: data/processed/TripLog_Clustered.csv
+  output_dir: outputs
+
+preprocessing:
+  pickup_status: 6          # Status code kept as "pickup"; 8 = drop-off (discarded)
+  datetime_column: CreatedDate
+
+clustering:
+  n_initial_clusters: 10    # notebook cell 5: KMeans(n_clusters=10)
+  n_sub_clusters: 10        # notebook cell 10: re-cluster the largest cluster into 10
+  split_cluster: auto       # "auto" = largest cluster; or an integer label (notebook used 0)
+  random_state: 42
+  n_init: null              # null = scikit-learn default; its default changed in v1.4 (10 -> "auto"),
+                            # so set 10 or 1 explicitly if you need to match a specific older/newer run
+  features: [VehLat, VehLng]
+
+evaluation:
+  n_splits: 10              # StratifiedKFold(n_splits=10, shuffle=True, random_state=42)
+  random_state: 42
+  features: [VehLat, VehLng]
+  label: Cluster
+  knn_neighbors: 3
+  random_forest_trees: 100
+  n_jobs: 1                 # set to -1 to use all CPU cores
+
+cluster_metrics:            # NEW (not in the original notebooks) - see docs/DISCREPANCIES.md #8
+  silhouette_sample_size: 20000   # silhouette is O(n^2); sample for large data
+  random_state: 42
+
+prediction:
+  num_neighbors: 3          # number of "magnetic points" returned
+  time_window_minutes: 10   # +/- window used to count pickups
+
+visualization:
+  map_zoom_recommendation: 13
+  map_zoom_overview: 12

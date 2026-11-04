@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=7
+haversine>=2.8   # only used by tests to cross-check the vectorised distance
+jupyter          # optional, to open notebooks/original/*.ipynb
