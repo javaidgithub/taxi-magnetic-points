@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper (preferred-citation below)."
+title: "Magnetic Points: taxi pickup hotspot recommendation with recursive K-Means"
+version: 0.1.0
+type: software
+license: MIT
+repository-code: "https://github.com/<your-username>/<repo-name>"  # TODO: replace after publishing
+abstract: >-
+  Implementation and documentation accompanying the paper "Integrating AI in
+  Ride-Hailing: A Framework for Taxi Hotspot Recommendation Using Recursive
+  K-Means Clustering and Classification".
+authors:
+  - family-names: Rasheed
+    given-names: Uzair
+    affiliation: "College of Electrical and Mechanical Engineering, NUST, Islamabad, Pakistan"
+  - family-names: Khalid
+    given-names: Sadia
+    affiliation: "College of Electrical and Mechanical Engineering, NUST, Islamabad, Pakistan"
+  - family-names: Javaid
+    given-names: Muhammad
+    affiliation: "Faculty of Computing, Riphah International University, Islamabad, Pakistan"
+  - family-names: Khan
+    given-names: Danyal
+    affiliation: "Faculty of Computing, Riphah International University, Islamabad, Pakistan"
+  - family-names: Aslam
+    given-names: Umar
+    affiliation: "Faculty of Computing, Riphah International University, Islamabad, Pakistan"
+  - family-names: Ahmad
+    given-names: Khawaja Bilal
+    affiliation: "Faculty of Computing, Riphah International University, Islamabad, Pakistan"
+preferred-citation:
+  type: generic
+  title: "Integrating AI in Ride-Hailing: A Framework for Taxi Hotspot Recommendation Using Recursive K-Means Clustering and Classification"
+  authors:
+    - family-names: Rasheed
+      given-names: Uzair
+    - family-names: Khalid
+      given-names: Sadia
+    - family-names: Javaid
+      given-names: Muhammad
+    - family-names: Khan
+      given-names: Danyal
+    - family-names: Aslam
+      given-names: Umar
+    - family-names: Ahmad
+      given-names: Khawaja Bilal
+  url: "https://ieeexplore.ieee.org/document/11591654"
+  notes: "Venue, year and DOI to be added once verified from the IEEE Xplore record."
+keywords:
+  - ride-hailing
+  - K-Means
+  - clustering
+  - hotspots
+  - magnetic points
